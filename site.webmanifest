@@ -1,8 +1,8 @@
 {
   "name": "Salicornia Pizza i Pasta",
   "short_name": "Salicornia",
-  "description": "Pizza napolitana y pasta italiana en Marina Port Premià, Premià de Mar.",
-  "start_url": "/",
+  "description": "Pizza italiana y pasta en Marina Port Premià, Premià de Mar.",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#0b0a09",
   "theme_color": "#0b0a09",
