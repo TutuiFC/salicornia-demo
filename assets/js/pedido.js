@@ -302,6 +302,7 @@
       "done.n4": "Pagas al recibirlo: {method}.",
       "done.call": "Llamar al restaurante",
       "done.again": "Hacer otro pedido",
+      "demo.bar": "Versión de demostración: los pedidos NO se envían al restaurante ni se cobra nada.",
       "geo.btn": "Usar mi ubicación",
       "geo.hint": "Rellena la dirección y calcula cuánto tardamos. Tu ubicación solo se usa para este pedido.",
       "geo.finding": "Buscando tu ubicación…",
@@ -492,6 +493,7 @@
       "done.n4": "Pagues en rebre-la: {method}.",
       "done.call": "Truca al restaurant",
       "done.again": "Fes una altra comanda",
+      "demo.bar": "Versió de demostració: les comandes NO s'envien al restaurant ni es cobra res.",
       "geo.btn": "Usar la meva ubicació",
       "geo.hint": "Omple l'adreça i calcula quant tardem. La teva ubicació només s'usa per a aquesta comanda.",
       "geo.finding": "Buscant la teva ubicació…",
@@ -682,6 +684,7 @@
       "done.n4": "You pay on receipt: {method}.",
       "done.call": "Call the restaurant",
       "done.again": "Place another order",
+      "demo.bar": "Demo version: orders are NOT sent to the restaurant and nothing is charged.",
       "geo.btn": "Use my location",
       "geo.hint": "Fills in your address and works out how long we take. Your location is only used for this order.",
       "geo.finding": "Finding your location…",
@@ -2456,6 +2459,19 @@
   els.dlgBody = els.dialog && els.dialog.querySelector("[data-dlg-body]");
   load();
   paintStatic();
+  /* demo pública: que nadie crea que ha hecho un pedido de verdad */
+  function showDemoBar() {
+    if (!DEMO || location.protocol === "file:") return;
+    var bar = document.createElement("div");
+    bar.className = "o-demobar";
+    bar.setAttribute("role", "note");
+    function paint() { bar.textContent = s("demo.bar"); }
+    paint();
+    document.addEventListener("sal:lang", paint);
+    var main = document.querySelector("[data-order-app]");
+    if (main) main.insertBefore(bar, main.firstChild);
+  }
+  showDemoBar();
   loadServerConfig();
   setStep("menu", { keepScroll: true }); /* limpia #tramitar/#confirmado si se recarga */
   renderCartAll();

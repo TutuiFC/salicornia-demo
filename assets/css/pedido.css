@@ -1099,3 +1099,16 @@ body[data-order-step]:not(.has-order-bar) .sal-fab { bottom: 1.1rem; }
 .o-geo .btn { gap: 0.5rem; }
 .o-geo__hint { margin: 0; font-size: 0.82rem; color: var(--grey); }
 .o-geo__msg { margin: 0; font-size: 0.9rem; color: var(--wine); min-height: 1.2em; }
+
+/* aviso de la demo pública */
+.o-demobar {
+  position: sticky;
+  top: var(--header-h);
+  z-index: 40;
+  padding: 0.55rem var(--gutter);
+  background: var(--gold);
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-align: center;
+}
