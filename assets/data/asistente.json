@@ -1,0 +1,1444 @@
+{
+ "meta": {
+  "nombre": "Salicornia Pizza i Pasta",
+  "generado": "2026-10-30",
+  "aviso": "Archivo GENERADO por _private/tools/build-asistente.js a partir de la web (carta.html, assets/js/config.js y assets/data/db.json). No editar a mano: cambia la web y vuelve a generarlo.",
+  "idiomas": [
+   "es",
+   "ca",
+   "en"
+  ]
+ },
+ "restaurante": {
+  "tipo": {
+   "es": "Pizzería y restaurante italiano",
+   "ca": "Pizzeria i restaurant italià",
+   "en": "Italian pizzeria and restaurant"
+  },
+  "descripcion": {
+   "es": "Pizza italiana, pasta, entrantes para compartir, postres italianos y terraza en Marina Port Premià, Premià de Mar.",
+   "ca": "Pizza italiana, pasta, entrants per compartir, postres italians i terrassa a Marina Port Premià, Premià de Mar.",
+   "en": "Italian pizza (high, well-fired crust), Italian pasta, starters to share, Italian desserts and a terrace at Marina Port Premià, Premià de Mar."
+  },
+  "cocinas": [
+   "Italiana",
+   "Pizza",
+   "Pasta"
+  ],
+  "rango_precios": "€€",
+  "valoracion_google": 4.4,
+  "resenas_google": "+900",
+  "temas_resenas": {
+   "es": [
+    "La pizza y sus ingredientes",
+    "La terraza y el ambiente del puerto",
+    "El trato y el servicio en sala",
+    "Los platos de pasta"
+   ],
+   "ca": [
+    "La pizza i els seus ingredients",
+    "La terrassa i l'ambient del port",
+    "El tracte i el servei a sala",
+    "Els plats de pasta"
+   ],
+   "en": [
+    "The Italian pizza and its ingredients",
+    "The terrace and the harbour atmosphere",
+    "The welcome and table service",
+    "The pasta dishes"
+   ]
+  }
+ },
+ "contacto": {
+  "direccion": {
+   "calle": "Marina Port Premià, Local 408/409",
+   "cp": "08330",
+   "ciudad": "Premià de Mar",
+   "provincia": "Barcelona",
+   "pais": "ES"
+  },
+  "telefono": "+34 864 62 76 21",
+  "telefono_mostro": "864 62 76 21",
+  "email": "salicornia.pizzeria@gmail.com",
+  "email_grupos_asunto": "Reserva de grupo en Salicornia",
+  "coordenadas": {
+   "lat": 41.4897681,
+   "lng": 2.3670252
+  },
+  "como_llegar": {
+   "coche": {
+    "es": "Acceso al recinto de Marina Port Premià por la Av. de les Roques d'en Ponç.",
+    "ca": "Accés al recinte de Marina Port Premià per l'Av. de les Roques d'en Ponç.",
+    "en": "Access to Marina Port Premià via Av. de les Roques d'en Ponç."
+   },
+   "a_pie": {
+    "es": "Desde el paseo marítimo de Premià de Mar, entrando por la zona comercial del puerto.",
+    "ca": "Des del passeig marítim de Premià de Mar, entrant per la zona comercial del port.",
+    "en": "From Premià de Mar's seafront, through the harbour's shops area."
+   }
+  }
+ },
+ "horario": {
+  "zona_horaria": "Europe/Madrid",
+  "avisos": {
+   "es": "Los lunes estamos cerrados. En días señalados el horario puede cambiar: llámanos y te lo confirmamos.",
+   "ca": "Els dilluns estem tancats. En dies assenyalats l'horari pot canviar: truca'ns i te'l confirmem.",
+   "en": "We're closed on Mondays. On public holidays the hours may change: give us a call and we'll confirm."
+  },
+  "dias": [
+   {
+    "dia": 1,
+    "nombre": {
+     "es": "Lunes",
+     "ca": "Dilluns",
+     "en": "Monday"
+    },
+    "abierto": false
+   },
+   {
+    "dia": 2,
+    "nombre": {
+     "es": "Martes",
+     "ca": "Dimarts",
+     "en": "Tuesday"
+    },
+    "abierto": true,
+    "apertura": "13:00",
+    "cierre": "23:00"
+   },
+   {
+    "dia": 3,
+    "nombre": {
+     "es": "Miércoles",
+     "ca": "Dimecres",
+     "en": "Wednesday"
+    },
+    "abierto": true,
+    "apertura": "13:00",
+    "cierre": "23:30"
+   },
+   {
+    "dia": 4,
+    "nombre": {
+     "es": "Jueves",
+     "ca": "Dijous",
+     "en": "Thursday"
+    },
+    "abierto": true,
+    "apertura": "13:00",
+    "cierre": "23:30"
+   },
+   {
+    "dia": 5,
+    "nombre": {
+     "es": "Viernes",
+     "ca": "Divendres",
+     "en": "Friday"
+    },
+    "abierto": true,
+    "apertura": "13:00",
+    "cierre": "23:30"
+   },
+   {
+    "dia": 6,
+    "nombre": {
+     "es": "Sábado",
+     "ca": "Dissabte",
+     "en": "Saturday"
+    },
+    "abierto": true,
+    "apertura": "13:00",
+    "cierre": "23:30"
+   },
+   {
+    "dia": 7,
+    "nombre": {
+     "es": "Domingo",
+     "ca": "Diumenge",
+     "en": "Sunday"
+    },
+    "abierto": true,
+    "apertura": "13:00",
+    "cierre": "23:00"
+   }
+  ]
+ },
+ "pedidos_online": {
+  "como_pedir": "Desde la página «Pide para llevar» de la web (pedido.html). Los pedidos de la web los reparte personal del propio restaurante.",
+  "modalidades": [
+   "A domicilio, con repartidores propios del restaurante",
+   "Para recoger en el local (Marina Port Premià, Local 408/409)"
+  ],
+  "zonas_reparto": [
+   "Premià de Mar (08330)",
+   "Premià de Dalt (08338)",
+   "Vilassar de Mar (08340)",
+   "El Masnou (08320)"
+  ],
+  "gastos_envio_eur": 4,
+  "pedido_minimo_domicilio_eur": 15,
+  "pedido_minimo_nota": "El mínimo cuenta solo los platos, sin el envío. Para recoger no hay mínimo.",
+  "envase_para_llevar_eur": 0.5,
+  "envase_nota": "Se cobra por cada pizza o plato de pasta.",
+  "suplemento_sin_gluten_pizza_pasta_eur": 2.5,
+  "suplemento_pan_sin_gluten_ensaladas_eur": 1,
+  "tiempo_entrega_min": "35–50",
+  "tiempo_recogida_min": "20–30",
+  "horario_pedidos": "El mismo que el del restaurante. El último pedido se acepta 30 minutos antes del cierre. También se puede programar para otra hora o para otro día.",
+  "formas_pago": "Efectivo o tarjeta al recibir el pedido (o al recogerlo). Si en la web aparece el pago online, también se puede pagar al hacer el pedido.",
+  "telefono_pedidos": "864 62 76 21"
+ },
+ "reservas": {
+  "como_reservar": "En la sección «Reservar mesa» de la web (módulo de CoverManager), en CoverManager o llamando al 864 62 76 21.",
+  "grupos": "Para grupos grandes o celebraciones, llamar al 864 62 76 21 o escribir a salicornia.pizzeria@gmail.com.",
+  "lunes_cerrado": true,
+  "enlace_covermanager": "https://restaurante.covermanager.com/salicornia-pizzeria/"
+ },
+ "servicios": {
+  "terraza": true,
+  "para_llevar_y_domicilio": "Sí, desde la web (pedido.html)",
+  "reservas_online": "CoverManager, integrado en la web",
+  "pago_con_tarjeta": true,
+  "mesas_para_grupos": true
+ },
+ "carta": {
+  "nota_precios": "Precios de la carta actual del restaurante (la misma de la web), en euros e IVA incluido.",
+  "alergenos": {
+   "es": "En la carta indicamos los alérgenos de cada plato. Hay opciones sin gluten: todas las pizzas (salvo la pizza del día) se pueden pedir sin gluten por +2,50 € (todas las pastas llevan gluten y no tienen opción sin gluten), hay pan sin gluten (4,00 €, o +1,00 € como acompañamiento de entrantes y ensaladas) y las ensaladas van con pan: con pan normal llevan gluten y con pan sin gluten (+1,00 €) son sin gluten. En la cocina se manipulan todos los alérgenos, así que pueden existir trazas. Dinos cualquier alergia o intolerancia antes de pedir y te confirmamos plato a plato.",
+   "ca": "A la carta indiquem els al·lèrgens de cada plat. Hi ha opcions sense gluten: totes les pizzes (excepte la pizza del dia) es poden demanar sense gluten per +2,50 € (totes les pastes porten gluten i no tenen opció sense gluten), hi ha pa sense gluten (4,00 €, o +1,00 € com a acompanyament d'entrants i amanides) i les amanides van amb pa: amb pa normal porten gluten i amb pa sense gluten (+1,00 €) són sense gluten. A la cuina es manipulen tots els al·lèrgens, així que hi pot haver traces. Digues-nos qualsevol al·lèrgia o intolerància abans de demanar i et confirmem plat a plat.",
+   "en": "The menu shows the allergens for each dish. There are gluten-free options: all pizzas (except the pizza of the day) can be made gluten-free for +€2.50 (all pastas contain gluten and have no gluten-free option), there is gluten-free bread (€4.00, or +€1.00 with starters and salads) and salads come with bread: with regular bread they contain gluten and with gluten-free bread (+€1.00) they are gluten-free. All allergens are handled in our kitchen, so traces may be present. Tell us about any allergy or intolerance before ordering and we'll check each dish with you."
+  },
+  "secciones": [
+   {
+    "id": "entrantes",
+    "titulo": "Entrantes",
+    "introduccion": "Para el centro de la mesa mientras se calienta el horno. Vienen acompañados de pan (pan sin gluten +1,00 €).",
+    "platos": [
+     {
+      "nombre": "Patatas bravas al horno",
+      "precio_eur": 6,
+      "alergenos_y_etiquetas": [
+       "Sin gluten",
+       "Huevo",
+       "Mostaza",
+       "Picante",
+       "Vegetariano"
+      ]
+     },
+     {
+      "nombre": "Fornarina",
+      "precio_eur": 4,
+      "descripcion": "Pan plano italiano con aceite y orégano.",
+      "alergenos_y_etiquetas": [
+       "Sin gluten",
+       "Vegano"
+      ]
+     },
+     {
+      "nombre": "Pan sin gluten",
+      "precio_eur": 4,
+      "alergenos_y_etiquetas": [
+       "Sin gluten"
+      ]
+     },
+     {
+      "nombre": "Aceitunas variadas",
+      "precio_eur": 4,
+      "alergenos_y_etiquetas": [
+       "Sin gluten",
+       "Vegano"
+      ]
+     },
+     {
+      "nombre": "Anchoas del Cantábrico (6 uds.)",
+      "precio_eur": 11,
+      "alergenos_y_etiquetas": [
+       "Sin gluten",
+       "Pescado"
+      ]
+     },
+     {
+      "nombre": "Vitello tonnato",
+      "precio_eur": 15,
+      "descripcion": "Redondo de ternera hecho al horno con mayonesa de atún, anchoas y alcaparras.",
+      "alergenos_y_etiquetas": [
+       "Sin gluten",
+       "Ternera",
+       "Pescado",
+       "Huevo"
+      ]
+     },
+     {
+      "nombre": "Tabla de embutidos italianos",
+      "precio_eur": 16,
+      "alergenos_y_etiquetas": [
+       "Sin gluten",
+       "Lácteo",
+       "Frutos secos",
+       "Cerdo"
+      ]
+     },
+     {
+      "nombre": "Tabla de paletilla ibérica",
+      "precio_eur": 14.5,
+      "alergenos_y_etiquetas": [
+       "Sin gluten",
+       "Cerdo"
+      ]
+     },
+     {
+      "nombre": "Tabla de quesos",
+      "precio_eur": 13.5,
+      "descripcion": "Maó semi, poyayo, Idiazábal ahumado D.O.P., Marantona curado y cabrales.",
+      "alergenos_y_etiquetas": [
+       "Sin gluten",
+       "Lácteo"
+      ]
+     },
+     {
+      "nombre": "Berenjena a la parmesana",
+      "precio_eur": 13,
+      "descripcion": "Berenjena, salsa de tomate San Marzano, mozzarella Fior di Latte y parmesano.",
+      "alergenos_y_etiquetas": [
+       "Sin gluten",
+       "Lácteo",
+       "Vegetariano"
+      ]
+     },
+     {
+      "nombre": "Boquerones (8 filetes)",
+      "precio_eur": 7,
+      "alergenos_y_etiquetas": [
+       "Sin gluten",
+       "Pescado"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "ensaladas",
+    "titulo": "Ensaladas",
+    "introduccion": "Todas las ensaladas van acompañadas de pan. Tú eliges: pan normal (con gluten) o pan sin gluten (+1,00 €), y con pan sin gluten la ensalada es sin gluten.",
+    "grupos": [
+     {
+      "titulo": "Con pescado y marisco",
+      "platos": [
+       {
+        "nombre": "Ventresca de atún y tomate",
+        "precio_eur": 14,
+        "descripcion": "Filetes de ventresca, cebolla roja cruda laminada, tomate de temporada, aceitunas, pimiento verde crudo laminado y albahaca.",
+        "opcion_sin_gluten": "Opción pan sin gluten +1,00 € (plato sin gluten)",
+        "alergenos_y_etiquetas": [
+         "Gluten (con pan normal)",
+         "Pescado"
+        ]
+       },
+       {
+        "nombre": "Salicornia",
+        "precio_eur": 15,
+        "descripcion": "Mezclum, gambas, manzana verde, aguacate, salicornia, láminas de almendras y limón.",
+        "opcion_sin_gluten": "Opción pan sin gluten +1,00 € (plato sin gluten)",
+        "alergenos_y_etiquetas": [
+         "Gluten (con pan normal)",
+         "Crustáceos",
+         "Frutos secos"
+        ]
+       },
+       {
+        "nombre": "Panzanella",
+        "precio_eur": 14,
+        "descripcion": "Sardina ahumada, picatostes, tomate cherry, pepino, cebolla, pimiento rojo, amarillo y verde marinados con vinagre, cebolla roja cruda, albahaca y almendras tostadas laminadas.",
+        "opcion_sin_gluten": "Opción pan sin gluten +1,00 € (plato sin gluten)",
+        "alergenos_y_etiquetas": [
+         "Gluten (con pan normal)",
+         "Pescado",
+         "Frutos secos",
+         "Sulfitos"
+        ]
+       }
+      ]
+     },
+     {
+      "titulo": "Con queso y del huerto",
+      "platos": [
+       {
+        "nombre": "Queso",
+        "precio_eur": 13,
+        "descripcion": "Mezclum, tomate cherry, nueces, albaricoque deshidratado y quesos frescos, semicurado y curado.",
+        "opcion_sin_gluten": "Opción pan sin gluten +1,00 € (plato sin gluten)",
+        "alergenos_y_etiquetas": [
+         "Gluten (con pan normal)",
+         "Lácteo",
+         "Frutos secos",
+         "Vegetariano"
+        ]
+       },
+       {
+        "nombre": "Caprese",
+        "precio_eur": 12.5,
+        "descripcion": "Burrata, tomate de temporada y salsa pesto de albahaca con frutos secos.",
+        "opcion_sin_gluten": "Opción pan sin gluten +1,00 € (plato sin gluten)",
+        "alergenos_y_etiquetas": [
+         "Gluten (con pan normal)",
+         "Lácteo",
+         "Frutos secos",
+         "Vegetariano"
+        ]
+       },
+       {
+        "nombre": "Huerta",
+        "precio_eur": 11,
+        "descripcion": "Mezclum, tomate cherry y verdura de temporada.",
+        "opcion_sin_gluten": "Opción pan sin gluten +1,00 € (plato sin gluten)",
+        "alergenos_y_etiquetas": [
+         "Gluten (con pan normal)",
+         "Vegano"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "pizzas",
+    "titulo": "Pizzas",
+    "introduccion": "Nuestras masas están hechas con Biga, masa madre con levadura firme, un prefermento de origen italiano, que madura 36h por lo que hace que tengas mejores digestiones.",
+    "grupos": [
+     {
+      "titulo": "Pizze classiche",
+      "platos": []
+     },
+     {
+      "platos": [
+       {
+        "nombre": "Marinara",
+        "precio_eur": 10,
+        "descripcion": "Salsa de tomate San Marzano, aceite de ajo y perejil.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Vegano"
+        ]
+       },
+       {
+        "nombre": "Margherita",
+        "precio_eur": 11,
+        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte y albahaca.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Vegetariano"
+        ]
+       },
+       {
+        "nombre": "Regina Margherita",
+        "precio_eur": 13,
+        "descripcion": "Salsa de tomate San Marzano, mozzarella di bufala, escamas de parmesano y albahaca.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Vegetariano"
+        ]
+       },
+       {
+        "nombre": "Prosciutto",
+        "precio_eur": 13.5,
+        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte y jamón dulce.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Cerdo"
+        ]
+       },
+       {
+        "nombre": "Napoli",
+        "precio_eur": 14,
+        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, alcaparras, anchoas italianas y orégano.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Pescado"
+        ]
+       },
+       {
+        "nombre": "Capricciosa",
+        "precio_eur": 15.5,
+        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, alcachofas, jamón dulce, champiñones y olivas.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Cerdo"
+        ]
+       },
+       {
+        "nombre": "Parmigiana",
+        "precio_eur": 15,
+        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, berenjena, jamón dulce, escamas de parmesano y albahaca.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Cerdo"
+        ]
+       },
+       {
+        "nombre": "Crudaiola (blanca)",
+        "precio_eur": 14.5,
+        "descripcion": "Mozzarella Fior di Latte, tomate cherry, perlas de mozzarella de bufala, rúcula y escamas de parmesano.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Vegetariano"
+        ]
+       }
+      ]
+     },
+     {
+      "platos": [
+       {
+        "nombre": "Diavola",
+        "precio_eur": 16,
+        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, salsiccia, salame picante y aceitunas.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Cerdo",
+         "Picante"
+        ]
+       },
+       {
+        "nombre": "Vegetariana",
+        "precio_eur": 15.5,
+        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, berenjena, calabacín, champiñones, rúcula, parmesano y tomate cherry.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Vegetariano"
+        ]
+       },
+       {
+        "nombre": "Prosciutto e funghi",
+        "precio_eur": 14,
+        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, jamón dulce y champiñones.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Cerdo"
+        ]
+       },
+       {
+        "nombre": "Burrata y Parma",
+        "precio_eur": 16,
+        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, jamón de Parma, burrata, rúcula y paté de aceitunas.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Cerdo"
+        ]
+       },
+       {
+        "nombre": "Quattro formaggi (blanca)",
+        "precio_eur": 14.5,
+        "descripcion": "Mozzarella Fior di Latte, gorgonzola, provola ahumada y escamas de parmesano.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Vegetariano"
+        ]
+       },
+       {
+        "nombre": "Calzone (pizza cerrada)",
+        "precio_eur": 14.5,
+        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, champiñones, jamón dulce y orégano.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Cerdo"
+        ]
+       },
+       {
+        "nombre": "Speck y gorgonzola (blanca)",
+        "precio_eur": 15.5,
+        "descripcion": "Mozzarella Fior di Latte, gorgonzola, speck, nueces y miel.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Cerdo",
+         "Frutos secos"
+        ]
+       },
+       {
+        "nombre": "Guancialina (blanca)",
+        "precio_eur": 16,
+        "descripcion": "Mozzarella Fior di Latte, champiñones, guanciale croccante y crema tartufata.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Cerdo"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "especiales",
+    "titulo": "Pizzas especiales",
+    "introduccion": "Combinaciones propias de la casa, con burrata, pesto de pistacho, provola ahumada, bresaola o trufa.",
+    "grupos": [
+     {
+      "titulo": "Pizze bianche",
+      "platos": [
+       {
+        "nombre": "Port Premià",
+        "precio_eur": 17,
+        "descripcion": "Mozzarella Fior di Latte, burrata, anchoas del Cantábrico, tomate semiseco, tomate cherry amarillo confitado, almendra tostada y albahaca.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Pescado",
+         "Frutos secos"
+        ]
+       },
+       {
+        "nombre": "Moro di Venezia",
+        "precio_eur": 15.5,
+        "descripcion": "Mozzarella Fior di Latte, gorgonzola, calabacín, pesto de pistacho, granel de pistacho y tomate cherry amarillo confitado.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Frutos secos",
+         "Vegetariano"
+        ]
+       },
+       {
+        "nombre": "Luna Rossa",
+        "precio_eur": 17,
+        "descripcion": "Mozzarella Fior di Latte, mix de setas, champiñones, aceite de ajo y perejil, tomate semiseco, burrata y capocollo.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Cerdo"
+        ]
+       },
+       {
+        "nombre": "Mascalzone Latino",
+        "precio_eur": 16,
+        "descripcion": "Mozzarella Fior di Latte, salsiccia, friarelli (grelos), provola ahumada y 'nduja.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Cerdo",
+         "Picante"
+        ]
+       },
+       {
+        "nombre": "Barbara",
+        "precio_eur": 16,
+        "descripcion": "Mozzarella Fior di Latte, pancetta italiana curada, crema de huevo con pecorino y pimienta negra.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Cerdo",
+         "Huevo"
+        ]
+       },
+       {
+        "nombre": "Tirrenia",
+        "precio_eur": 16.5,
+        "descripcion": "Mozzarella Fior di Latte, mortadela, burrata, pesto de pistacho y granel de pistachos.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Cerdo",
+         "Frutos secos"
+        ]
+       },
+       {
+        "nombre": "Dragone",
+        "precio_eur": 17,
+        "descripcion": "Mozzarella Fior di Latte, alcachofa a la brasa, cebolla roja asada, porchetta italiana, rúcula y burrata ahumada.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Cerdo"
+        ]
+       },
+       {
+        "nombre": "Tartufata",
+        "precio_eur": 17,
+        "descripcion": "Mozzarella Fior di Latte, bresaola, rúcula, burrata trufada y láminas de trufa.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Ternera"
+        ]
+       }
+      ]
+     },
+     {
+      "titulo": "Pizze rosse",
+      "platos": [
+       {
+        "nombre": "Azzurra",
+        "precio_eur": 16,
+        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, ventresca de atún, cebolla roja asada, tomates cherry amarillos confitados y aceitunas.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Pescado"
+        ]
+       },
+       {
+        "nombre": "Siciliana",
+        "precio_eur": 16.5,
+        "descripcion": "Salsa de tomate San Marzano, tomates cherry, pimientos rojos y amarillos asados, anchoas del Cantábrico, orégano, cebolla roja cruda laminada, pimiento verde crudo laminado y albahaca.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Pescado"
+        ]
+       },
+       {
+        "nombre": "Mediterránea",
+        "precio_eur": 16.5,
+        "descripcion": "Salsa de tomate San Marzano, bacalao marinado ahumado, pimientos rojo y amarillo asados, aceite de ajo y perejil, pimiento verde crudo laminado, rúcula, tomate cherry y albahaca.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Pescado"
+        ]
+       },
+       {
+        "nombre": "+39",
+        "precio_eur": 17,
+        "descripcion": "Salsa de tomate San Marzano, mozzarella di bufala, rúcula, tomate cherry, jamón de Parma y escamas de parmesano.",
+        "opcion_sin_gluten": "Opción sin gluten +2,50 €",
+        "alergenos_y_etiquetas": [
+         "Gluten",
+         "Lácteo",
+         "Cerdo"
+        ]
+       },
+       {
+        "nombre": "Pizza del día",
+        "precio_eur": null,
+        "precio": "S/M",
+        "descripcion": "Hecha con ingredientes de temporada. ¡Pregúntanos!"
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "id": "pasta",
+    "titulo": "Pasta",
+    "introduccion": "Pastas frescas artesanales, con sémola de trigo duro y yema de huevo, y salsas caseras. Todas las pastas llevan gluten.",
+    "platos": [
+     {
+      "nombre": "Lasaña de carne",
+      "precio_eur": 15,
+      "descripcion": "Salsa de tomate San Marzano, carne picada mixta, bechamel, mozzarella Fior di Latte, láminas de pasta y queso parmesano.",
+      "alergenos_y_etiquetas": [
+       "Gluten",
+       "Huevo",
+       "Lácteo",
+       "Cerdo",
+       "Ternera",
+       "Apio"
+      ]
+     },
+     {
+      "nombre": "Tagliatelle Boloñesa",
+      "precio_eur": 15,
+      "descripcion": "Pasta fresca all'uovo, carne de cerdo, carne de ternera, apio, zanahoria, cebolla, vino y salsa de tomate San Marzano.",
+      "alergenos_y_etiquetas": [
+       "Gluten",
+       "Huevo",
+       "Cerdo",
+       "Ternera",
+       "Apio"
+      ]
+     },
+     {
+      "nombre": "Gnocchi alla Sorrentina",
+      "precio_eur": 15,
+      "descripcion": "Gnocchi de patata, salsa de tomate San Marzano, ajo, albahaca, mozzarella de búfala y parmesano (gratinado).",
+      "alergenos_y_etiquetas": [
+       "Gluten",
+       "Huevo",
+       "Lácteo",
+       "Vegetariano"
+      ]
+     },
+     {
+      "nombre": "Spaghetti alla chitarra alle vongole e bottarga",
+      "precio_eur": 20,
+      "descripcion": "Pasta fresca all'uovo, almejas, ajo, perejil y bottarga (huevas de pescado deshidratadas y ralladas).",
+      "alergenos_y_etiquetas": [
+       "Gluten",
+       "Huevo",
+       "Molusco",
+       "Pescado"
+      ]
+     },
+     {
+      "nombre": "Picio alla Carbonara",
+      "precio_eur": 18,
+      "descripcion": "Espaguetis (pasta seca), guanciale croccante, crema di uovo, pecorino y pimienta negra. Se puede cambiar el tipo de pasta por tagliatelle o penne. El espagueti puede contener trazas de soja y mostaza.",
+      "alergenos_y_etiquetas": [
+       "Gluten",
+       "Huevo",
+       "Lácteo",
+       "Cerdo"
+      ]
+     },
+     {
+      "nombre": "Mezzemaniche alla Matriciana",
+      "precio_eur": 18,
+      "descripcion": "Pasta seca, salsa de tomate San Marzano, guanciale y pecorino.",
+      "alergenos_y_etiquetas": [
+       "Gluten",
+       "Lácteo",
+       "Cerdo"
+      ]
+     },
+     {
+      "nombre": "Ravioli de ricotta e spinaci, burro e salvia",
+      "precio_eur": 18,
+      "descripcion": "Pasta fresca all'uovo rellena de ricotta y espinacas, salteados en mantequilla, salvia y parmesano.",
+      "alergenos_y_etiquetas": [
+       "Gluten",
+       "Huevo",
+       "Lácteo",
+       "Vegetariano"
+      ]
+     },
+     {
+      "nombre": "Ravioli de ricotta e spinaci, salsa de tomate",
+      "precio_eur": 18,
+      "descripcion": "Pasta fresca all'uovo rellena de ricotta y espinacas, con salsa de tomate San Marzano, albahaca y parmesano.",
+      "alergenos_y_etiquetas": [
+       "Gluten",
+       "Huevo",
+       "Lácteo",
+       "Vegetariano"
+      ]
+     },
+     {
+      "nombre": "Pasta del día",
+      "precio_eur": null,
+      "precio": "S/M",
+      "descripcion": "Hecha con ingredientes de temporada. ¡Pregúntanos!",
+      "alergenos_y_etiquetas": [
+       "Gluten"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "menus",
+    "titulo": "Menús de mediodía",
+    "introduccion": "De martes a viernes, de 13:00 a 16:00 h. Los menús no se pueden compartir.",
+    "ver": "menus_mediodia"
+   },
+   {
+    "id": "postres",
+    "titulo": "Postres",
+    "introduccion": "Postres italianos clásicos, hechos para compartir (o no).",
+    "notas": [
+     "Pregunta por los postres del día: la carta cambia según la temporada."
+    ],
+    "platos": [
+     {
+      "nombre": "Pizza de Nutella",
+      "precio_eur": 9,
+      "descripcion": "Con Nutella y granel de avellanas.",
+      "alergenos_y_etiquetas": [
+       "Gluten",
+       "Lácteo",
+       "Frutos secos",
+       "Soja"
+      ]
+     },
+     {
+      "nombre": "Tiramisú",
+      "precio_eur": 7,
+      "descripcion": "Savoiardi, crema mascarpone, nata, café descafeinado y cacao amargo en polvo.",
+      "alergenos_y_etiquetas": [
+       "Gluten",
+       "Huevo",
+       "Lácteo"
+      ]
+     },
+     {
+      "nombre": "Milhojas",
+      "precio_eur": 8,
+      "descripcion": "Crema chantilly y frutos del bosque.",
+      "alergenos_y_etiquetas": [
+       "Gluten",
+       "Huevo",
+       "Lácteo"
+      ]
+     },
+     {
+      "nombre": "Cannoli alla siciliana",
+      "precio_eur": 7,
+      "descripcion": "Canutillos de galleta crujiente rellenos de ricotta, granel de pistacho y caramello di Marsala.",
+      "alergenos_y_etiquetas": [
+       "Gluten",
+       "Lácteo",
+       "Frutos secos"
+      ]
+     },
+     {
+      "nombre": "Crema catalana de pistacho",
+      "precio_eur": 7,
+      "descripcion": "Aromatizada con pasta de pistacho.",
+      "alergenos_y_etiquetas": [
+       "Huevo",
+       "Lácteo",
+       "Frutos secos"
+      ]
+     },
+     {
+      "nombre": "Coulant de chocolate",
+      "precio_eur": 8,
+      "descripcion": "Con helado de vainilla.",
+      "alergenos_y_etiquetas": [
+       "Gluten",
+       "Huevo",
+       "Lácteo",
+       "Frutos secos"
+      ]
+     },
+     {
+      "nombre": "Panna cotta",
+      "precio_eur": 6,
+      "descripcion": "Elige tu topping: chocolate, fresa, maracuyá, caramelo o frutos del bosque.",
+      "alergenos_y_etiquetas": [
+       "Lácteo"
+      ]
+     },
+     {
+      "nombre": "Helado artesanal (1 bola)",
+      "precio_eur": 3,
+      "descripcion": "Elige sabor: avellana, stracciatella, chocolate, fresa, vainilla, limón, coco, mandarina, pistacho o maracuyá.",
+      "alergenos_y_etiquetas": [
+       "Lácteo",
+       "Frutos secos"
+      ]
+     },
+     {
+      "nombre": "Helado artesanal (2 bolas)",
+      "precio_eur": 5,
+      "descripcion": "Elige dos sabores (indícalos en las notas del pedido): avellana, stracciatella, chocolate, fresa, vainilla, limón, coco, mandarina, pistacho o maracuyá.",
+      "alergenos_y_etiquetas": [
+       "Lácteo",
+       "Frutos secos"
+      ]
+     }
+    ]
+   },
+   {
+    "id": "bebidas",
+    "titulo": "Bebidas y vinos",
+    "introduccion": "Vinos italianos en botella, cervezas, refrescos, zumos y agua. Las bebidas con alcohol son solo para mayores de 18 años.",
+    "grupos": [
+     {
+      "titulo": "Vinos blancos",
+      "platos": [
+       {
+        "nombre": "Tareni Inzolia IGP · Pellegrino",
+        "precio_eur": 17.5,
+        "descripcion": "DOC Sicilia. Uva Inzolia 100%.",
+        "alergenos_y_etiquetas": [
+         "Sulfitos"
+        ]
+       },
+       {
+        "nombre": "Pinot Grigio · Borgo Vassalli · Feudi Romans",
+        "precio_eur": 19,
+        "descripcion": "DOC Friuli Venezia Giulia. Uva Pinot Grigio 100%.",
+        "alergenos_y_etiquetas": [
+         "Sulfitos"
+        ]
+       },
+       {
+        "nombre": "Moi Chardonnay di Puglia IGP · Varvaglione",
+        "precio_eur": 20,
+        "descripcion": "DOC Puglia. Uva Chardonnay 100%.",
+        "alergenos_y_etiquetas": [
+         "Sulfitos"
+        ]
+       },
+       {
+        "nombre": "Passerina Controguerra · Illuminati",
+        "precio_eur": 20.9,
+        "descripcion": "DOC Abruzzo. Uva Passerina 100%.",
+        "alergenos_y_etiquetas": [
+         "Sulfitos"
+        ]
+       }
+      ]
+     },
+     {
+      "titulo": "Vino rosado",
+      "platos": [
+       {
+        "nombre": "Susumaniello Rosé · Salento Varvaglione",
+        "precio_eur": 22,
+        "descripcion": "DOC Puglia. Uva Susumaniello 100%.",
+        "alergenos_y_etiquetas": [
+         "Sulfitos"
+        ]
+       }
+      ]
+     },
+     {
+      "titulo": "Vinos tintos",
+      "platos": [
+       {
+        "nombre": "Tareni Nero d'Avola · Pellegrino",
+        "precio_eur": 18.5,
+        "descripcion": "DOC Sicilia. Uva Nero d'Avola 100%.",
+        "alergenos_y_etiquetas": [
+         "Sulfitos"
+        ]
+       },
+       {
+        "nombre": "Colle Secco Rubí Montepulciano · Bodega Tollo",
+        "precio_eur": 20,
+        "descripcion": "DOC Abruzzo. Uva Montepulciano 100%.",
+        "alergenos_y_etiquetas": [
+         "Sulfitos"
+        ]
+       },
+       {
+        "nombre": "Zin Primitivo di Puglia · Pasqua CB",
+        "precio_eur": 20.5,
+        "descripcion": "DOC Puglia. Uva Primitivo 100%.",
+        "alergenos_y_etiquetas": [
+         "Sulfitos"
+        ]
+       },
+       {
+        "nombre": "Chianti Superiore · Due Arbie · Dievole",
+        "precio_eur": 21.5,
+        "descripcion": "DOC Toscana. Uva 80% Sangiovese y 20% Merlot.",
+        "alergenos_y_etiquetas": [
+         "Sulfitos"
+        ]
+       },
+       {
+        "nombre": "Susumaniello Rosso · Salento Varvaglione",
+        "precio_eur": 26,
+        "descripcion": "DOC Puglia. Uva Susumaniello 100%.",
+        "alergenos_y_etiquetas": [
+         "Sulfitos"
+        ]
+       }
+      ]
+     },
+     {
+      "titulo": "Espumosos",
+      "platos": [
+       {
+        "nombre": "Prosecco DOC Treviso Extradry · Serena Wines 18",
+        "precio_eur": 20,
+        "descripcion": "DOC Veneto. Uva Glera 100%.",
+        "alergenos_y_etiquetas": [
+         "Sulfitos"
+        ]
+       },
+       {
+        "nombre": "Lambrusco Rosato Gavioli · Bodega Gavioli",
+        "precio_eur": 17.5,
+        "descripcion": "DOC Emilia Romagna. Uva Lambrusco 100%.",
+        "alergenos_y_etiquetas": [
+         "Sulfitos"
+        ]
+       },
+       {
+        "nombre": "Lambrusco Reggiano DOC Amabile · Donelli",
+        "precio_eur": 19,
+        "descripcion": "DOC Emilia Romagna. Uva 60% Lambrusco Marani, Lambrusco Maestri, Lambrusco Montericco y Lambrusco Salamino.",
+        "alergenos_y_etiquetas": [
+         "Sulfitos"
+        ]
+       }
+      ]
+     },
+     {
+      "titulo": "Cervezas",
+      "platos": [
+       {
+        "nombre": "Mahou 5 Estrellas",
+        "precio_eur": 3,
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "Mahou sin gluten",
+        "precio_eur": 3.5,
+        "alergenos_y_etiquetas": [
+         "Sin gluten"
+        ]
+       },
+       {
+        "nombre": "Mahou sin gluten tostada 0,0",
+        "precio_eur": 3.5,
+        "descripcion": "Sin alcohol.",
+        "alergenos_y_etiquetas": [
+         "Sin gluten"
+        ]
+       },
+       {
+        "nombre": "Alhambra Reserva",
+        "precio_eur": 3.2,
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "Alhambra Roja Reserva",
+        "precio_eur": 3.4,
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "Voll-Damm",
+        "precio_eur": 3.2,
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "San Miguel Radler 0,0",
+        "precio_eur": 3,
+        "descripcion": "Sin alcohol.",
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "San Miguel 0,0",
+        "precio_eur": 3,
+        "descripcion": "Sin alcohol.",
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "San Miguel 0,0 Tostada",
+        "precio_eur": 3,
+        "descripcion": "Sin alcohol.",
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "Coronita",
+        "precio_eur": 3.2,
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "Peroni",
+        "precio_eur": 3.2,
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "Incusa no filtrada",
+        "precio_eur": 3.2,
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       }
+      ]
+     },
+     {
+      "titulo": "Cervezas artesanas",
+      "platos": [
+       {
+        "nombre": "Flea Costanza",
+        "precio_eur": 4.9,
+        "descripcion": "Blonde Ale.",
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "Flea Isabella",
+        "precio_eur": 4.9,
+        "descripcion": "Sin gluten.",
+        "alergenos_y_etiquetas": [
+         "Sin gluten"
+        ]
+       },
+       {
+        "nombre": "Flea Anais",
+        "precio_eur": 4.9,
+        "descripcion": "Smoked.",
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "Flea Bianca",
+        "precio_eur": 4.9,
+        "descripcion": "Blanche.",
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "Flea Federica extra",
+        "precio_eur": 4.9,
+        "descripcion": "IPA.",
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "Flea Bastola",
+        "precio_eur": 4.9,
+        "descripcion": "Imperial Red Ale.",
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "Flea Violante",
+        "precio_eur": 4.9,
+        "descripcion": "Belgian Strong Ale.",
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "Cierzo Citra",
+        "precio_eur": 6,
+        "descripcion": "IPA.",
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       },
+       {
+        "nombre": "Cierzo Just in time",
+        "precio_eur": 5,
+        "descripcion": "Pale Ale.",
+        "alergenos_y_etiquetas": [
+         "Gluten"
+        ]
+       }
+      ]
+     },
+     {
+      "titulo": "Refrescos",
+      "platos": [
+       {
+        "nombre": "Coca-Cola",
+        "precio_eur": 2.9
+       },
+       {
+        "nombre": "Coca-Cola Zero",
+        "precio_eur": 2.9
+       },
+       {
+        "nombre": "Coca-Cola Zero Zero",
+        "precio_eur": 2.9
+       },
+       {
+        "nombre": "Fanta de naranja",
+        "precio_eur": 2.9
+       },
+       {
+        "nombre": "Fanta de limón",
+        "precio_eur": 2.9
+       },
+       {
+        "nombre": "Aquarius de limón",
+        "precio_eur": 2.9
+       },
+       {
+        "nombre": "Red Bull",
+        "precio_eur": 3.5
+       },
+       {
+        "nombre": "Ginger Beer",
+        "precio_eur": 3.2
+       }
+      ]
+     },
+     {
+      "titulo": "Zumos",
+      "platos": [
+       {
+        "nombre": "Zumo de melocotón",
+        "precio_eur": 3
+       },
+       {
+        "nombre": "Zumo de piña",
+        "precio_eur": 3
+       },
+       {
+        "nombre": "Zumo de naranja",
+        "precio_eur": 3
+       },
+       {
+        "nombre": "Zumo de manzana",
+        "precio_eur": 3
+       }
+      ]
+     },
+     {
+      "titulo": "Agua",
+      "platos": [
+       {
+        "nombre": "Agua Solán de Cabras 0,5 L",
+        "precio_eur": 2.2
+       },
+       {
+        "nombre": "Agua Solán con gas 75 cl",
+        "precio_eur": 3.5
+       }
+      ]
+     }
+    ],
+    "ver_tambien": "glosario"
+   }
+  ],
+  "menus_mediodia": [
+   {
+    "nombre": "Menú pizza",
+    "horario": "Martes a viernes · 13:00–16:00",
+    "condiciones": "Pizza + bebida + postre o café. No se pueden añadir ingredientes extra.",
+    "precio_eur": 16,
+    "opciones": []
+   },
+   {
+    "nombre": "Menú pasta",
+    "horario": "Martes a viernes · 13:00–16:00",
+    "condiciones": "Entrante + pasta + bebida + postre o café. No se puede compartir.",
+    "precio_eur": 18,
+    "opciones": []
+   }
+  ],
+  "glosario": [
+   {
+    "termino": "Bresaola",
+    "significado": "Fiambre en finas lonchas de carne de ternera curada 2–3 meses, con un color púrpura. Originario del valle de Valtellina, al norte de Italia."
+   },
+   {
+    "termino": "Burrata",
+    "significado": "Queso fresco de leche de vaca pasteurizada. Cremoso, delicado y muy sabroso. Originario de Puglia."
+   },
+   {
+    "termino": "Bottarga",
+    "significado": "Huevas de pescado (generalmente de mújol o atún) saladas y secadas al aire, con un sabor intenso y marino, típico de la cocina italiana."
+   },
+   {
+    "termino": "Cannoli siciliani",
+    "significado": "Dulce típico de Sicilia. Masa en forma de tubo rellena de ingredientes y queso ricota dulce."
+   },
+   {
+    "termino": "Capocollo o coppa",
+    "significado": "Fiambre hecho de la cabeza de la paletilla o del cuello de cerdo curado entero. Tradicional en varias regiones de Italia."
+   },
+   {
+    "termino": "Fornarina",
+    "significado": "Pan tradicional elaborado con harinas de calidad. Muy típico italiano."
+   },
+   {
+    "termino": "Friarelli (grelos)",
+    "significado": "Brotes de nabo típicos del sur de Italia, especialmente Nápoles, con un sabor ligeramente amargo, que se saltean con ajo y aceite."
+   },
+   {
+    "termino": "Gorgonzola",
+    "significado": "Queso cremoso y untuoso, hecho con leche entera pasteurizada de vaca."
+   },
+   {
+    "termino": "Guanciale",
+    "significado": "Embutido curado italiano elaborado con papada de cerdo, de sabor intenso y textura melosa tras cocinarse."
+   },
+   {
+    "termino": "Mozzarella Fior di Latte",
+    "significado": "Queso mozzarella hecho con leche de vaca, de alta calidad. Ideal para la pizza."
+   },
+   {
+    "termino": "Mozzarella di Buffala",
+    "significado": "Queso mozzarella elaborado a base de leche de la hembra del búfalo. D.O.P. Campania."
+   },
+   {
+    "termino": "Pecorino",
+    "significado": "Queso italiano curado elaborado con leche de oveja, de sabor salado y ligeramente picante, ideal para pastas y gratinados."
+   },
+   {
+    "termino": "Porchetta",
+    "significado": "Preparación con base en cerdo asado con especias y cocido a la manera tradicional en el territorio de Ariccia, en el Lazio."
+   },
+   {
+    "termino": "Prosciutto de Parma",
+    "significado": "Originario de la región de Parma. Curado durante 13 meses para un sabor fragante y delicadamente dulce."
+   },
+   {
+    "termino": "Salicornia",
+    "significado": "Planta carnosa conocida como planta de San Pedro, espárrago de mar o hierba salada. Al morder se percibe un intenso sabor a sal."
+   },
+   {
+    "termino": "Speck",
+    "significado": "Jamón con un distintivo sabor a enebro, originario de la región del Tirol. Se cura con sal y se ahúma."
+   },
+   {
+    "termino": "Tomate San Marzano",
+    "significado": "Variedad de tomate. Una de las salsas de tomate más apreciadas en la cocina italiana."
+   },
+   {
+    "termino": "'Nduja",
+    "significado": "Embutido untable típico de la cocina calabresa, muy picante, elaborado con carne de cerdo y especias (similar a la sobrasada)."
+   }
+  ]
+ },
+ "resenas": {
+  "es": "No se publican citas textuales de reseñas; solo temas generales y la valoración de Google (4,4 · +900 reseñas).",
+  "ca": "No es publiquen citacions literals de ressenyes; només temes generals i la valoració de Google (4,4 · +900 ressenyes).",
+  "en": "No verbatim review quotes are published; only general themes and the Google rating (4.4 · +900 reviews)."
+ },
+ "enlaces": {
+  "web": "https://www.salicorniapizzaipasta.com",
+  "covermanager": "https://restaurante.covermanager.com/salicornia-pizzeria/",
+  "google_maps": "https://www.google.com/maps/dir/?api=1&destination=41.4897681,2.3670252",
+  "google_ficha": "https://www.google.com/maps/search/?api=1&query=Salicornia%20Pizza%20i%20Pasta%2C%20Marina%20Port%20Premi%C3%A0",
+  "instagram": "https://www.instagram.com/salicornia.pizzaipasta/",
+  "facebook": "https://www.facebook.com/salicorniapizzeria/"
+ }
+}

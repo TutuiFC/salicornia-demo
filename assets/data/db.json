@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "nombre": "Salicornia Pizza i Pasta",
+    "actualizado": "2026-10-12",
+    "fuente": "Datos generales escritos a mano (restaurante, contacto, horario, enlaces). La carta, los precios y los pedidos NO van aquí: el asistente los toma de la propia web (ver _private/tools/build-asistente.js).",
+    "idiomas": [
+      "es",
+      "ca",
+      "en"
+    ]
+  },
+  "restaurante": {
+    "tipo": {
+      "es": "Pizzería y restaurante italiano",
+      "ca": "Pizzeria i restaurant italià",
+      "en": "Italian pizzeria and restaurant"
+    },
+    "descripcion": {
+      "es": "Pizza italiana, pasta, entrantes para compartir, postres italianos y terraza en Marina Port Premià, Premià de Mar.",
+      "ca": "Pizza italiana, pasta, entrants per compartir, postres italians i terrassa a Marina Port Premià, Premià de Mar.",
+      "en": "Italian pizza (high, well-fired crust), Italian pasta, starters to share, Italian desserts and a terrace at Marina Port Premià, Premià de Mar."
+    },
+    "cocinas": [
+      "Italiana",
+      "Pizza",
+      "Pasta"
+    ],
+    "rango_precios": "€€",
+    "valoracion_google": 4.4,
+    "resenas_google": "+900",
+    "temas_resenas": {
+      "es": [
+        "La pizza y sus ingredientes",
+        "La terraza y el ambiente del puerto",
+        "El trato y el servicio en sala",
+        "Los platos de pasta"
+      ],
+      "ca": [
+        "La pizza i els seus ingredients",
+        "La terrassa i l'ambient del port",
+        "El tracte i el servei a sala",
+        "Els plats de pasta"
+      ],
+      "en": [
+        "The Italian pizza and its ingredients",
+        "The terrace and the harbour atmosphere",
+        "The welcome and table service",
+        "The pasta dishes"
+      ]
+    }
+  },
+  "contacto": {
+    "direccion": {
+      "calle": "Marina Port Premià, Local 408/409",
+      "cp": "08330",
+      "ciudad": "Premià de Mar",
+      "provincia": "Barcelona",
+      "pais": "ES"
+    },
+    "telefono": "+34 864 62 76 21",
+    "telefono_mostro": "864 62 76 21",
+    "email": "salicornia.pizzeria@gmail.com",
+    "email_grupos_asunto": "Reserva de grupo en Salicornia",
+    "coordenadas": {
+      "lat": 41.4897681,
+      "lng": 2.3670252
+    },
+    "como_llegar": {
+      "coche": {
+        "es": "Acceso al recinto de Marina Port Premià por la Av. de les Roques d'en Ponç.",
+        "ca": "Accés al recinte de Marina Port Premià per l'Av. de les Roques d'en Ponç.",
+        "en": "Access to Marina Port Premià via Av. de les Roques d'en Ponç."
+      },
+      "a_pie": {
+        "es": "Desde el paseo marítimo de Premià de Mar, entrando por la zona comercial del puerto.",
+        "ca": "Des del passeig marítim de Premià de Mar, entrant per la zona comercial del port.",
+        "en": "From Premià de Mar's seafront, through the harbour's shops area."
+      }
+    }
+  },
+  "horario": {
+    "zona_horaria": "Europe/Madrid",
+    "avisos": {
+      "es": "Los lunes estamos cerrados. En días señalados el horario puede cambiar: llámanos y te lo confirmamos.",
+      "ca": "Els dilluns estem tancats. En dies assenyalats l'horari pot canviar: truca'ns i te'l confirmem.",
+      "en": "We're closed on Mondays. On public holidays the hours may change: give us a call and we'll confirm."
+    },
+    "dias": [
+      {
+        "dia": 1,
+        "nombre": {
+          "es": "Lunes",
+          "ca": "Dilluns",
+          "en": "Monday"
+        },
+        "abierto": false
+      },
+      {
+        "dia": 2,
+        "nombre": {
+          "es": "Martes",
+          "ca": "Dimarts",
+          "en": "Tuesday"
+        },
+        "abierto": true,
+        "apertura": "13:00",
+        "cierre": "23:00"
+      },
+      {
+        "dia": 3,
+        "nombre": {
+          "es": "Miércoles",
+          "ca": "Dimecres",
+          "en": "Wednesday"
+        },
+        "abierto": true,
+        "apertura": "13:00",
+        "cierre": "23:30"
+      },
+      {
+        "dia": 4,
+        "nombre": {
+          "es": "Jueves",
+          "ca": "Dijous",
+          "en": "Thursday"
+        },
+        "abierto": true,
+        "apertura": "13:00",
+        "cierre": "23:30"
+      },
+      {
+        "dia": 5,
+        "nombre": {
+          "es": "Viernes",
+          "ca": "Divendres",
+          "en": "Friday"
+        },
+        "abierto": true,
+        "apertura": "13:00",
+        "cierre": "23:30"
+      },
+      {
+        "dia": 6,
+        "nombre": {
+          "es": "Sábado",
+          "ca": "Dissabte",
+          "en": "Saturday"
+        },
+        "abierto": true,
+        "apertura": "13:00",
+        "cierre": "23:30"
+      },
+      {
+        "dia": 7,
+        "nombre": {
+          "es": "Domingo",
+          "ca": "Diumenge",
+          "en": "Sunday"
+        },
+        "abierto": true,
+        "apertura": "13:00",
+        "cierre": "23:00"
+      }
+    ]
+  },
+  "resenas_opinion": {
+    "es": "No se publican citas textuales de reseñas; solo temas generales y la valoración de Google (4,4 · +900 reseñas).",
+    "ca": "No es publiquen citacions literals de ressenyes; només temes generals i la valoració de Google (4,4 · +900 ressenyes).",
+    "en": "No verbatim review quotes are published; only general themes and the Google rating (4.4 · +900 reviews)."
+  },
+  "carta": {
+    "alergenos": {
+      "es": "En la carta indicamos los alérgenos de cada plato. Hay opciones sin gluten: todas las pizzas (salvo la pizza del día) se pueden pedir sin gluten por +2,50 € (todas las pastas llevan gluten y no tienen opción sin gluten), hay pan sin gluten (4,00 €, o +1,00 € como acompañamiento de entrantes y ensaladas) y las ensaladas van con pan: con pan normal llevan gluten y con pan sin gluten (+1,00 €) son sin gluten. En la cocina se manipulan todos los alérgenos, así que pueden existir trazas. Dinos cualquier alergia o intolerancia antes de pedir y te confirmamos plato a plato.",
+      "ca": "A la carta indiquem els al·lèrgens de cada plat. Hi ha opcions sense gluten: totes les pizzes (excepte la pizza del dia) es poden demanar sense gluten per +2,50 € (totes les pastes porten gluten i no tenen opció sense gluten), hi ha pa sense gluten (4,00 €, o +1,00 € com a acompanyament d'entrants i amanides) i les amanides van amb pa: amb pa normal porten gluten i amb pa sense gluten (+1,00 €) són sense gluten. A la cuina es manipulen tots els al·lèrgens, així que hi pot haver traces. Digues-nos qualsevol al·lèrgia o intolerància abans de demanar i et confirmem plat a plat.",
+      "en": "The menu shows the allergens for each dish. There are gluten-free options: all pizzas (except the pizza of the day) can be made gluten-free for +€2.50 (all pastas contain gluten and have no gluten-free option), there is gluten-free bread (€4.00, or +€1.00 with starters and salads) and salads come with bread: with regular bread they contain gluten and with gluten-free bread (+€1.00) they are gluten-free. All allergens are handled in our kitchen, so traces may be present. Tell us about any allergy or intolerance before ordering and we'll check each dish with you."
+    }
+  },
+  "enlaces": {
+    "web": "https://www.salicorniapizzaipasta.com",
+    "covermanager": "https://restaurante.covermanager.com/salicornia-pizzeria/",
+    "google_maps": "https://www.google.com/maps/dir/?api=1&destination=41.4897681,2.3670252",
+    "google_ficha": "https://www.google.com/maps/search/?api=1&query=Salicornia%20Pizza%20i%20Pasta%2C%20Marina%20Port%20Premi%C3%A0",
+    "instagram": "https://www.instagram.com/salicornia.pizzaipasta/",
+    "facebook": "https://www.facebook.com/salicorniapizzeria/"
+  }
+}

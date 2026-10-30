@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Registro de pedidos | Salicornia Pizza i Pasta</title>
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0b0a09">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="preload" href="assets/fonts/marcellus-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/karla-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<link rel="stylesheet" href="assets/css/styles.css?v=20261049">
+<link rel="stylesheet" href="assets/css/registro.css?v=20261015">
+</head>
+
+<body class="rg-body">
+<header class="site-header is-solid">
+  <div class="container">
+    <a class="brand" href="index.html" aria-label="Salicornia Pizza i Pasta, inicio">
+      <img src="assets/img/logo-salicornia.png" alt="" width="40" height="40">
+      <span class="brand-text">
+        <span class="brand-name">Salicornia</span>
+        <span class="brand-sub">Pizza i Pasta</span>
+      </span>
+    </a>
+    <div class="header-actions">
+      <a class="btn btn--take" href="pedido.html">Nuevo pedido</a>
+    </div>
+  </div>
+</header>
+
+<main id="contenido" class="rg">
+  <div class="container">
+    <div class="rg-head">
+      <h1 class="rg-title">Registro de pedidos</h1>
+      <p class="rg-sub">Pedidos y pagos guardados en este navegador. Se actualiza solo al hacer un pedido nuevo.</p>
+    </div>
+
+    <section class="rg-filters" aria-label="Filtros">
+      <div class="rg-tabs" role="group" aria-label="Periodo">
+        <button type="button" data-period="day" aria-pressed="true">Diario</button>
+        <button type="button" data-period="week" aria-pressed="false">Semanal</button>
+        <button type="button" data-period="month" aria-pressed="false">Mensual</button>
+        <button type="button" data-period="quarter" aria-pressed="false">Trimestral</button>
+        <button type="button" data-period="all" aria-pressed="false">Todo</button>
+      </div>
+
+      <div class="rg-nav" data-nav>
+        <button type="button" class="rg-arrow" data-step="-1" aria-label="Periodo anterior">&#8249;</button>
+        <span class="rg-range" data-range aria-live="polite"></span>
+        <button type="button" class="rg-arrow" data-step="1" aria-label="Periodo siguiente">&#8250;</button>
+        <button type="button" class="rg-today" data-today>Hoy</button>
+      </div>
+
+      <label class="rg-select">
+        <span>Método de pago</span>
+        <select data-method>
+          <option value="">Todos</option>
+          <option value="cash">Efectivo</option>
+          <option value="card">Tarjeta al recibir</option>
+          <option value="online-card">Tarjeta online</option>
+          <option value="google-pay">Google Pay</option>
+          <option value="apple-pay">Apple Pay</option>
+          <option value="bizum">Bizum</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="rg-stats" aria-label="Resumen" data-stats></section>
+
+    <section class="rg-split" aria-label="Por método de pago">
+      <h2 class="rg-h2">Por método de pago</h2>
+      <div data-split></div>
+    </section>
+
+    <section class="rg-list" aria-label="Pedidos">
+      <div class="rg-listhead">
+        <h2 class="rg-h2">Pedidos</h2>
+        <div class="rg-export">
+          <span class="rg-export__info" data-export-info></span>
+          <button type="button" class="btn rg-export__btn" data-export>Descargar Excel (CSV)</button>
+        </div>
+      </div>
+      <div data-list></div>
+    </section>
+
+    <div class="rg-foot">
+      <button type="button" class="rg-clear" data-clear>Borrar registro</button>
+    </div>
+  </div>
+</main>
+
+<script src="assets/js/registro.js?v=20261014" defer></script>
+</body>
+</html>

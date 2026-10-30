@@ -1,0 +1,142 @@
+/* Registro de pedidos (registro.html) */
+.rg-body { background: var(--cream); color: var(--black); }
+.rg { padding: calc(var(--header-h) + clamp(2rem, 5vw, 3.5rem)) 0 clamp(3rem, 6vw, 5rem); }
+
+.rg-head { margin-bottom: 2rem; }
+.rg-title { font-family: var(--font-display); font-weight: 400; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; margin: 0; }
+.rg-sub { margin: 0.6rem 0 0; color: var(--grey); max-width: 60ch; }
+
+.rg-h2 { font-family: var(--font-display); font-weight: 400; font-size: 1.35rem; margin: 0 0 1rem; }
+
+/* filtros */
+.rg-filters { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.5rem; padding: 1.1rem 0; border-block: 1px solid var(--line-light); }
+.rg-tabs { display: flex; flex-wrap: wrap; border: 1px solid var(--line-light); }
+.rg-tabs button { font: inherit; font-size: 0.95rem; padding: 0.6rem 1rem; border: 0; background: transparent; color: var(--black); cursor: pointer; }
+.rg-tabs button + button { border-left: 1px solid var(--line-light); }
+.rg-tabs button:hover { background: var(--ivory); }
+.rg-tabs button[aria-pressed="true"] { background: var(--black); color: var(--cream); }
+
+.rg-nav { display: flex; align-items: center; gap: 0.5rem; }
+.rg-nav[hidden] { display: none; }
+.rg-arrow, .rg-today { font: inherit; border: 1px solid var(--line-light); background: transparent; color: var(--black); cursor: pointer; }
+.rg-arrow { width: 2.4rem; height: 2.4rem; font-size: 1.4rem; line-height: 1; }
+.rg-arrow:disabled { opacity: 0.35; cursor: default; }
+.rg-today { padding: 0.55rem 0.85rem; font-size: 0.9rem; }
+.rg-arrow:not(:disabled):hover, .rg-today:hover { background: var(--ivory); }
+.rg-range { min-width: 15ch; font-weight: 600; }
+
+.rg-select { display: flex; align-items: center; gap: 0.6rem; margin-left: auto; font-size: 0.95rem; }
+.rg-select select { font: inherit; padding: 0.55rem 0.7rem; border: 1px solid var(--line-light); background: var(--ivory); color: var(--black); border-radius: 0; }
+
+:is(.rg-tabs button, .rg-arrow, .rg-today, .rg-select select, .rg-bar button, .rg-clear, .rg-item summary):focus-visible { outline: 2px solid var(--wine); outline-offset: 2px; }
+
+/* resumen */
+.rg-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1px; margin: 2rem 0 2.75rem; background: var(--line-light); border: 1px solid var(--line-light); }
+.rg-stat { display: grid; gap: 0.35rem; padding: 1.1rem 1.25rem; background: var(--ivory); }
+.rg-stat__l { font-size: 0.85rem; color: var(--grey); }
+.rg-stat__v { font-family: var(--font-display); font-size: clamp(1.4rem, 3vw, 1.85rem); line-height: 1.1; font-variant-numeric: tabular-nums; }
+
+/* reparto por método */
+.rg-split { margin-bottom: 2.75rem; }
+.rg-bars { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
+.rg-bar button { width: 100%; display: grid; grid-template-columns: minmax(9rem, 13rem) 1fr 10.5rem; align-items: center; gap: 1rem; padding: 0.55rem 0.4rem; font: inherit; color: inherit; text-align: left; background: transparent; border: 0; cursor: pointer; }
+.rg-bar button:hover { background: var(--ivory); }
+.rg-bar.is-dim { opacity: 0.4; }
+.rg-bar__track { height: 10px; background: var(--line-light); }
+.rg-bar__fill { display: block; height: 100%; background: var(--wine); }
+.rg-bar__val { font-size: 0.95rem; font-variant-numeric: tabular-nums; white-space: nowrap; text-align: right; }
+
+/* descarga */
+.rg-listhead { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem 1.5rem; margin-bottom: 1rem; }
+.rg-listhead .rg-h2 { margin: 0; }
+.rg-export { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1rem; }
+.rg-export__info { font-size: 0.9rem; color: var(--grey); }
+.rg-export__btn:disabled { opacity: 0.4; cursor: default; }
+
+/* lista */
+.rg-table { border-top: 1px solid var(--line-light); }
+.rg-row { display: grid; grid-template-columns: 10rem 1fr 7rem 10rem 6rem; gap: 1rem; align-items: center; padding: 0.8rem 0.4rem; }
+.rg-row--head { font-size: 0.85rem; color: var(--grey); border-bottom: 1px solid var(--line-light); }
+.rg-item { border-bottom: 1px solid var(--line-light); }
+.rg-item summary { cursor: pointer; list-style: none; }
+.rg-item summary::-webkit-details-marker { display: none; }
+.rg-item summary:hover, .rg-item[open] summary { background: var(--ivory); }
+.rg-num { text-align: right; font-variant-numeric: tabular-nums; }
+.rg-ref { font-weight: 600; }
+.rg-tag { font-style: normal; font-weight: 400; font-size: 0.75rem; letter-spacing: 0.04em; padding: 0.1rem 0.4rem; margin-left: 0.35rem; color: var(--wine); border: 1px solid currentColor; }
+.rg-detail { padding: 0.3rem 0.4rem 1rem; background: var(--ivory); }
+.rg-detail p { margin: 0 0 0.5rem; color: var(--grey); }
+.rg-detail ul { list-style: none; margin: 0; padding: 0; max-width: 34rem; }
+.rg-detail li { display: flex; justify-content: space-between; gap: 1rem; padding: 0.2rem 0; }
+.rg-detail li span { font-variant-numeric: tabular-nums; }
+
+.rg-empty { color: var(--grey); padding: 1rem 0; margin: 0; }
+.rg-empty a { color: var(--wine); }
+
+.rg-foot { margin-top: 2.5rem; text-align: right; }
+.rg-clear { font: inherit; font-size: 0.9rem; padding: 0.55rem 0.9rem; background: transparent; color: var(--grey); border: 1px solid var(--line-light); cursor: pointer; }
+.rg-clear:hover, .rg-clear.is-armed { color: var(--cream); background: var(--wine); border-color: var(--wine); }
+
+@media (max-width: 1180px) {
+  .rg-select { margin-left: 0; }
+}
+
+@media (max-width: 760px) {
+  .rg { padding-top: calc(var(--header-h) + 1.5rem); }
+  .rg-head { margin-bottom: 1.25rem; }
+  .rg-sub { font-size: 0.95rem; }
+
+  /* filtros: tres bloques a todo el ancho */
+  .rg-filters { display: grid; gap: 0.75rem; padding: 1rem 0; }
+  .rg-tabs { display: flex; flex-wrap: nowrap; }
+  .rg-tabs button { flex: 1 1 auto; padding: 0.75rem 0.5rem; font-size: 0.8125rem; min-height: 44px; }
+  .rg-nav { display: grid; grid-template-columns: 44px 1fr 44px auto; gap: 0.4rem; }
+  .rg-arrow { width: 44px; height: 44px; }
+  .rg-today { height: 44px; }
+  .rg-range { min-width: 0; text-align: center; font-size: 0.9rem; line-height: 1.3; }
+  .rg-select { display: grid; gap: 0.35rem; margin-left: 0; font-size: 0.85rem; color: var(--grey); }
+  .rg-select select { width: 100%; min-height: 44px; font-size: 1rem; color: var(--black); }
+
+  /* resumen: 2 columnas, la última a todo el ancho */
+  .rg-stats { grid-template-columns: 1fr 1fr; margin: 1.25rem 0 2rem; }
+  .rg-stat { padding: 0.9rem 1rem; }
+  .rg-stat:last-child:nth-child(odd) { grid-column: 1 / -1; }
+
+  .rg-split { margin-bottom: 2rem; }
+  .rg-bar button { grid-template-columns: 1fr auto; gap: 0.4rem 1rem; padding: 0.6rem 0; }
+  .rg-bar__track { grid-column: 1 / -1; grid-row: 2; }
+  .rg-bar__val { font-size: 0.875rem; }
+
+  /* descarga */
+  .rg-listhead { display: grid; justify-content: stretch; gap: 0.6rem; }
+  .rg-export { display: grid; gap: 0.6rem; }
+  .rg-export__info { font-size: 0.85rem; }
+  .rg-export__btn { width: 100%; justify-content: center; }
+
+  /* pedidos como tarjetas compactas */
+  .rg-row--head { display: none; }
+  .rg-item summary.rg-row {
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "ref ref total" "date date date" "type pay pay";
+    gap: 0.2rem 0.4rem;
+    padding: 0.85rem 0;
+  }
+  .rg-row > :nth-child(1) { grid-area: date; color: var(--grey); font-size: 0.85rem; }
+  .rg-row > :nth-child(2) { grid-area: ref; }
+  .rg-row > :nth-child(3) { grid-area: type; font-size: 0.875rem; color: var(--grey); }
+  .rg-row > :nth-child(3)::after { content: " ·"; }
+  .rg-row > :nth-child(4) { grid-area: pay; font-size: 0.875rem; color: var(--grey); }
+  .rg-row > .rg-num { grid-area: total; font-weight: 600; font-size: 1.05rem; }
+  .rg-item summary:hover, .rg-item[open] summary { background: transparent; }
+  .rg-detail { padding: 0.75rem; margin-bottom: 0.85rem; }
+
+  .rg-foot { text-align: center; }
+  .rg-clear { width: 100%; min-height: 44px; }
+}
+
+@media (max-width: 349px) {
+  .rg-tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line-light); }
+  .rg-tabs button { background: var(--cream); }
+  .rg-tabs button + button { border-left: 0; }
+  .rg-tabs button:last-child { grid-column: span 2; }
+}
