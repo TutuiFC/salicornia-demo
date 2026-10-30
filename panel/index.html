@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Panel del restaurante (demo) · Salicornia</title>
+<link rel="icon" href="../favicon.ico">
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<link rel="stylesheet" href="admin.css">
+<style>
+  .d-banner { position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; justify-content: center; align-items: center;
+    padding: 0.5rem 1rem; background: #c19a5b; color: #0b0a09; font-size: 0.85rem; font-weight: 700; text-align: center; }
+  .d-banner button { min-height: 32px; padding: 0.2rem 0.8rem; border: 1px solid #0b0a09; background: transparent; color: #0b0a09; font-weight: 700; cursor: pointer; border-radius: 4px; }
+  .a-top { top: 0; position: static; }
+  .d-sim { margin-left: auto; }
+  .d-toast { position: fixed; left: 50%; bottom: 1.2rem; transform: translateX(-50%); z-index: 50; max-width: 90vw; padding: 0.7rem 1.1rem; background: #0b0a09; color: #efe9de; border-radius: 6px; font-weight: 600; box-shadow: 0 8px 30px rgba(0,0,0,.35); }
+  .d-toast[hidden] { display: none; }
+  dialog.d-ticket { border: 0; padding: 1rem; max-width: 380px; width: 92vw; border-radius: 6px; }
+  dialog.d-ticket::backdrop { background: rgba(0,0,0,.55); }
+  dialog.d-ticket pre { margin: 0 0 0.8rem; white-space: pre-wrap; font: 13px/1.45 ui-monospace, Consolas, monospace; }
+  .a-rider__status { margin: 0 0 1rem; padding: 0.7rem 0.9rem; background: #fff; border: 1px solid var(--line); font-size: 0.92rem; }
+  .a-order.is-sharing { outline: 2px solid #2f7a3e; outline-offset: -2px; }
+  .a-tabs button { padding: 0.55rem 0.9rem; border: 0; background: transparent; font-weight: 600; font-size: 0.88rem; cursor: pointer; }
+  .a-tabs button[aria-current] { background: var(--ink); color: var(--cream); }
+  .a-nav button { padding: 0.45rem 0.8rem; background: transparent; border: 0; border-bottom: 2px solid transparent; color: inherit; cursor: pointer; font-size: 0.8rem; letter-spacing: 0.14em; text-transform: uppercase; }
+  .a-nav button[aria-current] { border-color: var(--gold); color: #fff; }
+  .a-order__eta { display: inline-block; margin-left: 0.4rem; padding: 0.1rem 0.45rem; background: #f3ead6; font-size: 0.85rem; font-weight: 600; }
+</style>
+</head>
+<body class="a-body">
+<div class="d-banner" role="note">
+  <span>DEMO · pedidos de ejemplo · lo que pulses aquí no se guarda en ningún servidor</span>
+  <button type="button" data-reset>Reiniciar demo</button>
+</div>
+<header class="a-top">
+  <a class="a-brand" href="../"><img src="../assets/img/logo-salicornia.png" alt="" width="34" height="34"><span>Salicornia <small>Panel</small></span></a>
+  <nav class="a-nav" aria-label="Panel">
+    <button type="button" data-view="pedidos" aria-current="page">Pedidos</button>
+    <button type="button" data-view="reparto">Reparto</button>
+    <button type="button" data-view="informes">Informes</button>
+    <button type="button" data-view="ajustes">Ajustes</button>
+  </nav>
+  <div class="a-top__actions">
+    <button type="button" class="a-pill a-pill--on" data-accepting title="Pulsa para pausar los pedidos online">Pedidos web: abiertos</button>
+    <button type="button" class="a-btn a-btn--ghost" data-logout>Salir</button>
+  </div>
+</header>
+<main class="a-main" id="app"></main>
+<dialog class="d-ticket" id="ticket"><pre id="ticket-text"></pre><button type="button" class="a-btn a-btn--primary" data-close-ticket>Cerrar</button></dialog>
+<div class="d-toast" id="toast" role="status" aria-live="polite" hidden></div>
+<script src="panel.js?v=1"></script>
+</body>
+</html>
