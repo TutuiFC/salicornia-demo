@@ -127,8 +127,8 @@ window.SAL_I18N = {
     "junto al mar": "al costat del mar",
     "Nuestra carta es un reflejo de la tradición italiana y de nuestro compromiso con la calidad. Elaboramos pizzas con masa artesanal fermentada lentamente y con ingredientes seleccionados, tanto locales como importados de Italia.":
       "La nostra carta és un reflex de la tradició italiana i del nostre compromís amb la qualitat. Elaborem pizzes amb massa artesanal fermentada lentament i amb ingredients seleccionats, tant locals com importats d'Itàlia.",
-    "Se come dentro, con la barra y las lámparas encendidas, o fuera en la terraza, con el puerto alrededor. A mediodía, de noche, en pareja o en una mesa larga.":
-      "Es menja a dins, amb la barra i les llums enceses, o fora a la terrassa, amb el port al voltant. A migdia, de nit, en parella o en una taula llarga.",
+    "Terraza amplia climatizada, perfecta para cualquier época del año.":
+      "Terrassa àmplia climatitzada, perfecta per a qualsevol època de l'any.",
     "Mediterráneo": "Mediterrani",
     "Cocina": "Cuina",
     "Pizza italiana, pasta y postres italianos": "Pizza italiana, pasta i postres italians",
@@ -156,7 +156,7 @@ window.SAL_I18N = {
     /* ---------- home: pizza ---------- */
     "Pizza con carácter italiano": "Pizza amb caràcter italià",
     "Pizzas sin gluten acompañadas de salsas caseras llenas de sabor: Fior di Latte, tomate San Marzano, burrata, Parma, pistacho o trufa.":
-      "Pizzes sense gluten acompanyades de salses casolanes plenes de sabor: Fior di Latte, tomàquet San Marzano, burrata, Parma, pistatx o tòfona.",
+      "Pizzes sense gluten acompanyades de salses casolanes plenes de sabor: Fior di Latte, tomàquet San Marzano, burrata, Parma, pistatx o tòfona.",
     "Salami picante.": "Salami picant.",
     "Jamón y champiñones.": "Pernil i xampinyons.",
     "Cuatro quesos italianos.": "Quatre formatges italians.",

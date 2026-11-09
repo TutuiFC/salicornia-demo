@@ -131,8 +131,8 @@ window.SAL_I18N.en = {
   "junto al mar": "by the sea",
   "Nuestra carta es un reflejo de la tradición italiana y de nuestro compromiso con la calidad. Elaboramos pizzas con masa artesanal fermentada lentamente y con ingredientes seleccionados, tanto locales como importados de Italia.":
     "Our menu reflects Italian tradition and our commitment to quality. We make our pizzas with artisan dough, slowly fermented, and with carefully selected ingredients, both local and imported from Italy.",
-  "Se come dentro, con la barra y las lámparas encendidas, o fuera en la terraza, con el puerto alrededor. A mediodía, de noche, en pareja o en una mesa larga.":
-    "Dine inside at the bar with the lamps lit, or outside on the terrace with the harbour all around. Lunch, dinner, as a couple or at a long table.",
+  "Terraza amplia climatizada, perfecta para cualquier época del año.":
+    "Spacious climate-controlled terrace, perfect for any time of year.",
   "Mediterráneo": "Mediterranean",
   "Cocina": "Kitchen",
   "Italiana": "Italian",
