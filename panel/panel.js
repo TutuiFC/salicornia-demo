@@ -92,7 +92,7 @@
       items: [item(1, "Ensalada Caprese", 13.5, { gf: true, note: "Pan sin gluten", pack: false }), item(1, "Pizza Diavola", 16)] });
     var d = mk({ ref: "SAL-W3NC6B", mode: "delivery", asap: true, status: "preparando", created: now - 21 * MIN, eta: now + 15 * MIN, name: "Jordi S.", phone: "699 222 333",
       addr: "Avinguda de Joan Carles I 40, 08330 Premià de Mar", km: 2.3, rider: "", pay: "cash", cashWith: "30", paid: false, allergies: "",
-      items: [item(1, "Picio alla Carbonara", 18, { note: "Pasta: Tagliatelle" }), item(1, "Coca-Cola", 2.9, { pack: false })] });
+      items: [item(1, "Spaghetti alla Carbonara", 18, { note: "Pasta: Tagliatelle" }), item(1, "Coca-Cola", 2.9, { pack: false })] });
     var e = mk({ ref: "SAL-Q5HJ1V", mode: "delivery", asap: true, status: "listo", created: now - 33 * MIN, eta: now + 6 * MIN, name: "Eva C.", phone: "611 808 909",
       addr: "Carrer del Doctor Marti Casas 9, 08330 Premià de Mar", km: 0.9, rider: "", pay: "online-card", paid: true, allergies: "",
       items: [item(1, "Pizza Quattro Formaggi (blanca)", 17, { gf: true, note: "" }), item(1, "Tabla de embutidos italianos", 16, { pack: false })] });

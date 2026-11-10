@@ -58,7 +58,7 @@
   var PHOTOS = {
     "Tabla de embutidos italianos": { base: "tabla-embutidos", w: [460, 680] },
     "Burrata y Parma": { base: "pizza-burrata-parma", w: [420, 550] },
-    "Picio alla Carbonara": { base: "pasta-carbonara", w: [460, 680] },
+    "Spaghetti alla Carbonara": { base: "pasta-carbonara", w: [460, 680] },
     "Cannoli alla siciliana": { base: "cannoli", w: [480, 720] },
     "Margherita": { base: "platos/margherita", w: [320, 400] },
     "Mezzemaniche alla Matriciana": { base: "platos/mezzemaniche-alla-matriciana", w: [320, 390] },
@@ -67,26 +67,26 @@
     "Aceitunas variadas": { base: "platos/aceitunas-variadas", w: [320, 640] },
     "Anchoas del Cantábrico (6 uds.)": { base: "platos/anchoas-del-cantabrico-6-uds", w: [320, 640] },
     "Azzurra": { base: "platos/azzurra", w: [320, 640] },
-    "Barbara": { base: "platos/barbara", w: [320, 640] },
+    "Barbara (blanca)": { base: "platos/barbara", w: [320, 640] },
     "Calzone (pizza cerrada)": { base: "platos/calzone-pizza-cerrada", w: [320, 500] },
     "Capricciosa": { base: "platos/capricciosa", w: [320, 550] },
     "Crudaiola (blanca)": { base: "platos/crudaiola-blanca", w: [320, 640] },
     "Diavola": { base: "platos/diavola", w: [320, 640] },
-    "Dragone": { base: "platos/dragone", w: [320, 640] },
+    "Dragone (blanca)": { base: "platos/dragone", w: [320, 640] },
     "Fornarina": { base: "platos/fornarina", w: [320, 640] },
     "Gnocchi alla Sorrentina": { base: "platos/gnocchi-alla-sorrentina", w: [320, 640] },
     "Huerta": { base: "platos/huerta", w: [320, 640] },
     "Lasaña de carne": { base: "platos/lasana-de-carne", w: [320, 640] },
-    "Luna Rossa": { base: "platos/luna-rossa", w: [320, 640] },
+    "Luna Rossa (blanca)": { base: "platos/luna-rossa", w: [320, 640] },
     "Marinara": { base: "platos/marinara", w: [320, 640] },
-    "Mascalzone Latino": { base: "platos/mascalzone-latino", w: [320, 640] },
+    "Mascalzone Latino (blanca)": { base: "platos/mascalzone-latino", w: [320, 640] },
     "Mediterránea": { base: "platos/mediterranea", w: [320, 640] },
-    "Moro di Venezia": { base: "platos/moro-di-venezia", w: [320, 640] },
+    "Moro di Venezia (blanca)": { base: "platos/moro-di-venezia", w: [320, 640] },
     "Napoli": { base: "platos/napoli", w: [320, 640] },
     "Panzanella": { base: "platos/panzanella", w: [320, 640] },
     "Parmigiana": { base: "platos/parmigiana", w: [320, 640] },
     "Patatas bravas al horno": { base: "platos/patatas-bravas-al-horno", w: [320, 640] },
-    "Port Premià": { base: "platos/port-premia", w: [320, 640] },
+    "Port Premià (blanca)": { base: "platos/port-premia", w: [320, 640] },
     "Prosciutto e funghi": { base: "platos/prosciutto-e-funghi", w: [320, 640] },
     "Quattro formaggi (blanca)": { base: "platos/quattro-formaggi-blanca", w: [320, 640] },
     "Ravioli de ricotta e spinaci, burro e salvia": { base: "platos/ravioli-de-ricotta-e-spinaci-burro-e-salvia", w: [320, 640] },
@@ -96,13 +96,13 @@
     "Spaghetti alla chitarra alle vongole e bottarga": { base: "platos/spaghetti-alla-chitarra-alle-vongole-e-bottarga", w: [320, 640] },
     "Speck y gorgonzola (blanca)": { base: "platos/speck-y-gorgonzola-blanca", w: [320, 640] },
     "Tagliatelle Boloñesa": { base: "platos/tagliatelle-bolonesa", w: [320, 640] },
-    "Tartufata": { base: "platos/tartufata", w: [320, 640] },
+    "Tartufata (blanca)": { base: "platos/tartufata", w: [320, 640] },
     "Tiramisú": { base: "platos/tiramisu", w: [320, 640] },
-    "Tirrenia": { base: "platos/tirrenia", w: [320, 640] },
+    "Tirrenia (blanca)": { base: "platos/tirrenia", w: [320, 640] },
     "Vegetariana": { base: "platos/vegetariana", w: [320, 640] },
     "Vitello tonnato": { base: "platos/vitello-tonnato", w: [320, 640] }
   };
-  var FEATURED = ["Tabla de embutidos italianos", "Burrata y Parma", "Picio alla Carbonara", "Cannoli alla siciliana"];
+  var FEATURED = ["Tabla de embutidos italianos", "Burrata y Parma", "Spaghetti alla Carbonara", "Cannoli alla siciliana"];
   var ENTRY_HASH = location.hash; /* si entran con #cat-pizzas (por ejemplo desde «Crea tu pizza»), se baja a esa sección */
   var STORE_KEY = "salicornia_pedido_v1";
   var PROFILE_KEY = "salicornia_datos_v1"; /* datos de contacto, solo si el cliente marca «recordar» */
@@ -139,7 +139,7 @@
       "mode.delivery_sub": "{min}–{max} min · envío {fee}",
       "mode.pickup_sub": "{min}–{max} min · sin gastos",
       "fact.min": "Pedido mínimo {x}",
-      "fact.zone": "Repartimos en {zones}",
+      "fact.zone": "Repartimos hasta {max} km del local ({zones}…)",
       "fact.pay": "Pagas al recibir: efectivo o tarjeta",
       "status.open": "Abierto · aceptamos pedidos hasta las {t}",
       "status.later_today": "Abrimos hoy a las {t} · ya puedes programar tu pedido",
@@ -151,6 +151,8 @@
       "cats.label": "Categorías de la carta",
       "featured.title": "Destacados de la casa",
       "create.cta": "Crea tu pizza",
+      "create.cold": "Las pizzas con ingredientes fríos no son aconsejables para pedir a domicilio.",
+      "create.salad_cta": "Crea tu ensalada",
       "create.hint": "Elige tú los ingredientes",
       "loading": "Cargando la carta…",
       "load.error": "No hemos podido cargar la carta. Llámanos al {tel} y te tomamos el pedido por teléfono.",
@@ -162,13 +164,20 @@
       "dlg.close": "Cerrar",
       "dlg.base": "Base",
       "dlg.base_normal": "Masa normal",
-      "dlg.base_gf": "Masa sin gluten",
+      "dlg.base_gf": "Masa sin gluten, sin contaminación cruzada",
       "dlg.pan_normal": "Pan normal (con gluten)",
+      "dlg.plain_normal": "Con gluten",
+      "dlg.plain_gf": "Sin gluten",
       "dlg.pan_gf": "Pan sin gluten",
       "card.gf_pan": "Opción pan sin gluten",
       "cart.gf_pan": "Pan sin gluten (plato sin gluten)",
       "cart.pan_normal": "Pan normal (con gluten)",
       "dlg.notes": "Indicaciones para cocina",
+      "dlg.no_takeaway": "Este plato no es aconsejable para llevar: la carbonara se espesa con el viaje y llega peor que en el restaurante.",
+      "card.no_takeaway": "No aconsejable para llevar",
+      "card.no_delivery_cold": "No aconsejable a domicilio",
+      "dlg.no_delivery_cold": "Esta pizza lleva ingredientes fríos que se ponen al salir del horno (como burrata o rúcula): no es aconsejable pedirla a domicilio. Si la recoges en el local llega mejor.",
+      "dlg.pasteur": "La mozzarella y todos los quesos se pueden pedir pasteurizados. Dínoslo en las indicaciones.",
       "dlg.optional": "opcional",
       "dlg.notes_ph": "Ej.: sin cebolla, bien hecha…",
       "dlg.pasta": "Tipo de pasta",
@@ -211,8 +220,9 @@
       "ck.rider": "Indicaciones para el repartidor",
       "ck.rider_ph": "Ej.: portal azul, timbre 2B",
       "ck.zone_note": "Solo repartimos en estas poblaciones. Si estás en otra, elige «Recoger en local».",
+      "ck.far": "Estás lejos del local: tu pedido puede llegar algo más frío. Si lo prefieres, elige «Recoger en local».",
       "ck.pickup_at": "Recoge tu pedido en",
-      "ck.pickup_addr": "Marina Port Premià, Local 408/409 · 08330 Premià de Mar",
+      "ck.pickup_addr": "Marina Port Premià, Locales 408/409 y 501/502 · 08330 Premià de Mar",
       "ck.map": "Cómo llegar",
       "ck.s2": "¿Cuándo?",
       "ck.asap": "Lo antes posible",
@@ -290,10 +300,10 @@
       "done.wa_p": "Se ha abierto WhatsApp con tu pedido ya escrito. Pulsa enviar para que nos llegue.",
       "done.wa_btn": "Abrir WhatsApp",
       "done.eta_delivery": "Llegará aprox. entre las {from} y las {to} a {addr}.",
-      "done.eta_pickup": "Podrás recogerlo a partir de las {from} en Marina Port Premià, Local 408/409.",
+      "done.eta_pickup": "Podrás recogerlo a partir de las {from} en Marina Port Premià, Locales 408/409 y 501/502.",
       "done.sched_delivery": "Te lo llevamos {day} a las {time} a {addr}.",
       "done.on_date": "el {date}",
-      "done.sched_pickup": "Podrás recogerlo {day} a las {time} en Marina Port Premià, Local 408/409.",
+      "done.sched_pickup": "Podrás recogerlo {day} a las {time} en Marina Port Premià, Locales 408/409 y 501/502.",
       "done.next": "Qué pasa ahora",
       "done.n1": "Revisamos tu pedido. Si hay que confirmar algo, te llamamos al {phone}.",
       "done.n2": "Lo preparamos al momento en cocina.",
@@ -330,7 +340,7 @@
       "mode.delivery_sub": "{min}–{max} min · enviament {fee}",
       "mode.pickup_sub": "{min}–{max} min · sense despeses",
       "fact.min": "Comanda mínima {x}",
-      "fact.zone": "Repartim a {zones}",
+      "fact.zone": "Repartim fins a {max} km del local ({zones}…)",
       "fact.pay": "Pagues en rebre-la: efectiu o targeta",
       "status.open": "Obert · acceptem comandes fins a les {t}",
       "status.later_today": "Obrim avui a les {t} · ja pots programar la comanda",
@@ -342,6 +352,8 @@
       "cats.label": "Categories de la carta",
       "featured.title": "Destacats de la casa",
       "create.cta": "Crea la teva pizza",
+      "create.cold": "Les pizzes amb ingredients freds no són aconsellables per demanar a domicili.",
+      "create.salad_cta": "Crea la teva amanida",
       "create.hint": "Tria tu els ingredients",
       "loading": "Carregant la carta…",
       "load.error": "No hem pogut carregar la carta. Truca'ns al {tel} i et prenem la comanda per telèfon.",
@@ -353,13 +365,20 @@
       "dlg.close": "Tanca",
       "dlg.base": "Base",
       "dlg.base_normal": "Massa normal",
-      "dlg.base_gf": "Massa sense gluten",
+      "dlg.base_gf": "Massa sense gluten, sense contaminació creuada",
       "dlg.pan_normal": "Pa normal (amb gluten)",
+      "dlg.plain_normal": "Amb gluten",
+      "dlg.plain_gf": "Sense gluten",
       "dlg.pan_gf": "Pa sense gluten",
       "card.gf_pan": "Opció pa sense gluten",
       "cart.gf_pan": "Pa sense gluten (plat sense gluten)",
       "cart.pan_normal": "Pa normal (amb gluten)",
       "dlg.notes": "Indicacions per a la cuina",
+      "dlg.no_takeaway": "Aquest plat no és aconsellable per emportar: la carbonara s'espesseix amb el viatge i arriba pitjor que al restaurant.",
+      "card.no_takeaway": "No aconsellable per emportar",
+      "card.no_delivery_cold": "No aconsellable a domicili",
+      "dlg.no_delivery_cold": "Aquesta pizza porta ingredients freds que es posen en sortir del forn (com burrata o rúcula): no és aconsellable demanar-la a domicili. Si la reculls al local arriba millor.",
+      "dlg.pasteur": "La mozzarella i tots els formatges es poden demanar pasteuritzats. Digues-ho a les indicacions.",
       "dlg.optional": "opcional",
       "dlg.notes_ph": "Ex.: sense ceba, ben cuita…",
       "dlg.pasta": "Tipus de pasta",
@@ -402,8 +421,9 @@
       "ck.rider": "Indicacions per al repartidor",
       "ck.rider_ph": "Ex.: portal blau, timbre 2B",
       "ck.zone_note": "Només repartim en aquestes poblacions. Si ets en una altra, tria «Recollir al local».",
+      "ck.far": "Ets lluny del local: la teva comanda pot arribar una mica més freda. Si ho prefereixes, tria «Recollir al local».",
       "ck.pickup_at": "Recull la comanda a",
-      "ck.pickup_addr": "Marina Port Premià, Local 408/409 · 08330 Premià de Mar",
+      "ck.pickup_addr": "Marina Port Premià, Locals 408/409 i 501/502 · 08330 Premià de Mar",
       "ck.map": "Com arribar-hi",
       "ck.s2": "Quan?",
       "ck.asap": "Com més aviat millor",
@@ -481,10 +501,10 @@
       "done.wa_p": "S'ha obert WhatsApp amb la comanda ja escrita. Prem enviar perquè ens arribi.",
       "done.wa_btn": "Obre WhatsApp",
       "done.eta_delivery": "Arribarà aprox. entre les {from} i les {to} a {addr}.",
-      "done.eta_pickup": "La podràs recollir a partir de les {from} a Marina Port Premià, Local 408/409.",
+      "done.eta_pickup": "La podràs recollir a partir de les {from} a Marina Port Premià, Locals 408/409 i 501/502.",
       "done.sched_delivery": "Te la portem {day} a les {time} a {addr}.",
       "done.on_date": "el {date}",
-      "done.sched_pickup": "La podràs recollir {day} a les {time} a Marina Port Premià, Local 408/409.",
+      "done.sched_pickup": "La podràs recollir {day} a les {time} a Marina Port Premià, Locals 408/409 i 501/502.",
       "done.next": "Què passa ara",
       "done.n1": "Revisem la comanda. Si cal confirmar alguna cosa, et truquem al {phone}.",
       "done.n2": "La preparem al moment a la cuina.",
@@ -521,7 +541,7 @@
       "mode.delivery_sub": "{min}–{max} min · {fee} delivery",
       "mode.pickup_sub": "{min}–{max} min · no fee",
       "fact.min": "Minimum order {x}",
-      "fact.zone": "We deliver to {zones}",
+      "fact.zone": "We deliver up to {max} km from the restaurant ({zones}…)",
       "fact.pay": "Pay on delivery: cash or card",
       "status.open": "Open · taking orders until {t}",
       "status.later_today": "We open today at {t} · you can schedule your order now",
@@ -533,6 +553,8 @@
       "cats.label": "Menu categories",
       "featured.title": "House favourites",
       "create.cta": "Create your pizza",
+      "create.cold": "Pizzas with cold ingredients are not recommended for delivery.",
+      "create.salad_cta": "Create your salad",
       "create.hint": "Choose the ingredients yourself",
       "loading": "Loading the menu…",
       "load.error": "We couldn't load the menu. Call us on {tel} and we'll take your order by phone.",
@@ -544,13 +566,20 @@
       "dlg.close": "Close",
       "dlg.base": "Base",
       "dlg.base_normal": "Regular base",
-      "dlg.base_gf": "Gluten-free base",
+      "dlg.base_gf": "Gluten-free base, no cross-contamination",
       "dlg.pan_normal": "Regular bread (contains gluten)",
+      "dlg.plain_normal": "With gluten",
+      "dlg.plain_gf": "Gluten-free",
       "dlg.pan_gf": "Gluten-free bread",
       "card.gf_pan": "Gluten-free bread option",
       "cart.gf_pan": "Gluten-free bread (gluten-free dish)",
       "cart.pan_normal": "Regular bread (contains gluten)",
       "dlg.notes": "Notes for the kitchen",
+      "dlg.no_takeaway": "This dish is not recommended for takeaway: carbonara thickens on the way and is not as good as in the restaurant.",
+      "card.no_takeaway": "Not recommended for takeaway",
+      "card.no_delivery_cold": "Not recommended for delivery",
+      "dlg.no_delivery_cold": "This pizza has cold toppings added after it leaves the oven (such as burrata or rocket): we don't recommend ordering it for delivery. It travels better if you collect it.",
+      "dlg.pasteur": "Mozzarella and all cheeses can be ordered pasteurised. Just tell us in the notes.",
       "dlg.optional": "optional",
       "dlg.notes_ph": "E.g. no onion, well done…",
       "dlg.pasta": "Pasta type",
@@ -593,8 +622,9 @@
       "ck.rider": "Notes for the rider",
       "ck.rider_ph": "E.g. blue door, bell 2B",
       "ck.zone_note": "We only deliver to these towns. If you're elsewhere, choose “Collection”.",
+      "ck.far": "You're a long way from the restaurant: your order may arrive a little cooler. If you prefer, choose “Collection”.",
       "ck.pickup_at": "Collect your order at",
-      "ck.pickup_addr": "Marina Port Premià, Unit 408/409 · 08330 Premià de Mar",
+      "ck.pickup_addr": "Marina Port Premià, Units 408/409 and 501/502 · 08330 Premià de Mar",
       "ck.map": "Get directions",
       "ck.s2": "When?",
       "ck.asap": "As soon as possible",
@@ -672,10 +702,10 @@
       "done.wa_p": "WhatsApp has opened with your order already written. Tap send so it reaches us.",
       "done.wa_btn": "Open WhatsApp",
       "done.eta_delivery": "It should arrive between {from} and {to} at {addr}.",
-      "done.eta_pickup": "It'll be ready to collect from {from} at Marina Port Premià, Unit 408/409.",
+      "done.eta_pickup": "It'll be ready to collect from {from} at Marina Port Premià, Units 408/409 and 501/502.",
       "done.sched_delivery": "We'll bring it {day} at {time} to {addr}.",
       "done.on_date": "on {date}",
-      "done.sched_pickup": "It'll be ready to collect {day} at {time} at Marina Port Premià, Unit 408/409.",
+      "done.sched_pickup": "It'll be ready to collect {day} at {time} at Marina Port Premià, Units 408/409 and 501/502.",
       "done.next": "What happens next",
       "done.n1": "We check your order. If we need to confirm anything, we'll call you on {phone}.",
       "done.n2": "We make it fresh in our kitchen.",
@@ -851,6 +881,7 @@
         var descEl = li.querySelector(":scope > p");
         var tags = [];
         var gfOption = false;
+        var gfExtra = li.hasAttribute("data-gf-extra") ? parseFloat(li.getAttribute("data-gf-extra")) : null;
         li.querySelectorAll(":scope > .tags .tag").forEach(function (t) {
           var txt = norm(t.textContent);
           var ic = t.getAttribute("data-icon") || "";
@@ -869,6 +900,8 @@
           price: m ? parseFloat(m[1] + "." + m[2]) : null,
           tags: tags,
           gfOption: gfOption,
+          gfExtra: gfExtra,
+          noTakeaway: li.hasAttribute("data-no-llevar") ? (li.getAttribute("data-no-llevar") || "si") : "",
           variantsLabel: li.getAttribute("data-variants-label") || "Pasta",
           variants: (li.getAttribute("data-variants") || "").split("|").map(function (v) { return v.trim(); }).filter(Boolean),
           envase: !!ENVASE_CATS[catId],
@@ -946,7 +979,7 @@
     var z = CFG.zonasReparto || [];
     return z.length ? z[z.length - 1][0] : 0;
   }
-  function fmtKm(km) { return km.toLocaleString(locale(), { minimumFractionDigits: 1, maximumFractionDigits: 1 }); }
+  function fmtKm(km) { return km.toLocaleString(locale(), { minimumFractionDigits: km % 1 ? 1 : 0, maximumFractionDigits: 1 }); }
   /* a la hora de comer, el tiempo de reparto depende de lo lejos que esté el cliente */
   function lunchZone() {
     var c = state.customer;
@@ -963,18 +996,32 @@
   }
 
   /* --- carrito ------------------------------------------------------------------ */
-  function gfExtraOf(p) { return p && p.cat === "ensaladas" ? CFG.sinGlutenPan : CFG.sinGluten; }
+  function hasCheese(p) {
+    if (!p) return false;
+    if (p.custom || p.cat === "pizzas" || p.cat === "especiales") return true;
+    return /mozzarella|queso|burrata|provola|gorgonzola|parmesano|pecorino|ricotta|mascarpone|scamorza|fior di latte|cabrales|maó|idiaz|marantona|poyayo|fontina|grana|stracciatella/i.test(p.name + " " + (p.desc || ""));
+  }
+  function gfExtraOf(p) { return p && p.gfExtra != null ? p.gfExtra : (p && p.cat === "ensaladas" ? CFG.sinGlutenPan : CFG.sinGluten); }
+  function gfPlus(p) { var x = gfExtraOf(p); return x > 0 ? " +" + money(x) : ""; }
   /* «Crea tu pizza»: base + cada ingrediente (los repetidos cuentan). El servidor lo recalcula. */
   var CUSTOM_ID = "pizzas-crea-tu-pizza";
   function ingCost(line) {
-    return line.ing && line.ing.length ? Math.round(line.ing.length * CFG.pizzaIng * 100) / 100 : 0;
+    if (!line.ing || !line.ing.length) return 0;
+    var pr = (line.id === "ensaladas-crea-tu-ensalada" ? CFG.ensaladaIngPrecios : CFG.pizzaIngPrecios) || {};
+    var sum = line.ing.reduce(function (a, id) { return a + (typeof pr[id] === "number" ? pr[id] : CFG.pizzaIng); }, 0);
+    return Math.round(sum * 100) / 100;
   }
   function ingSub(line) {
     var order = [], n = {};
     (line.ingN || []).forEach(function (x) { if (!n[x]) { n[x] = 0; order.push(x); } n[x]++; });
     return order.map(function (x) { return tr(x) + (n[x] > 1 ? " ×" + n[x] : ""); }).join(", ");
   }
+  var SALAD_ID = "ensaladas-crea-tu-ensalada";
   function addCustomProduct() {
+    byId[SALAD_ID] = {
+      id: SALAD_ID, cat: "ensaladas", group: "", name: "Crea tu ensalada", desc: "", price: CFG.ensaladaBase, tags: [],
+      gfOption: true, variantsLabel: "", variants: [], envase: false, photo: null, custom: true
+    };
     byId[CUSTOM_ID] = {
       id: CUSTOM_ID, cat: "pizzas", group: "", name: "Crea tu pizza", desc: "", price: CFG.pizzaBase, tags: [],
       gfOption: true, variantsLabel: "Pasta", variants: [], envase: true, photo: null, custom: true
@@ -1094,11 +1141,13 @@
         el.setAttribute(bits[0], s(bits[1]));
       });
     });
-    var zones = Object.keys(CFG.codigosPostales).map(function (k) { return CFG.codigosPostales[k]; });
+    var zones = Object.keys(CFG.codigosPostales).map(function (k) { return CFG.codigosPostales[k]; })
+      .filter(function (z, i, a) { return a.indexOf(z) === i; });
+    var zonesShort = ["Mataró", "Premià", "Vilassar", "El Masnou", "Montgat", "Badalona"];
     if (els.facts) {
       els.facts.innerHTML =
         '<li>' + icon("i-bag", 16) + esc(s("fact.min", { x: money(CFG.minimo) })) + "</li>" +
-        '<li>' + icon("i-pin", 16) + esc(s("fact.zone", { zones: zones.join(", ") })) + "</li>" +
+        '<li>' + icon("i-pin", 16) + esc(s("fact.zone", { zones: zonesShort.join(", "), max: fmtKm(maxKm()) })) + "</li>" +
         '<li>' + icon("i-card", 16) + esc(s("fact.pay")) + "</li>";
     }
     els.modes.forEach(function (btn) {
@@ -1171,7 +1220,8 @@
       (p.desc ? '<span class="o-card__desc">' + esc(tr(p.desc)) + "</span>" : "") +
       '<span class="o-card__foot"><span class="o-card__price">' + esc(priceLabel(p)) + "</span>" +
       '<span class="o-card__icons">' + allergenIcons(p) + "</span></span>" +
-      (p.gfOption ? '<span class="o-card__gf">' + esc(p.cat === "ensaladas" ? s("card.gf_pan") : s("card.gf")) + " +" + esc(money(gfExtraOf(p))) + "</span>" : "") +
+      (p.noTakeaway ? '<span class="o-card__warn">' + esc(s(p.noTakeaway === "frio" ? "card.no_delivery_cold" : "card.no_takeaway")) + "</span>" : "") +
+      (p.gfOption ? '<span class="o-card__gf">' + esc(p.cat === "ensaladas" ? s("card.gf_pan") : s("card.gf")) + esc(gfPlus(p)) + "</span>" : "") +
       "</span>" +
       (p.photo ? photoHTML(p, "120px", "o-card__photo") : "") +
       '<span class="o-card__add" aria-hidden="true">' + (p.price == null ? icon("i-phone", 16) : icon("i-plus", 18)) + "</span>" +
@@ -1203,9 +1253,14 @@
       html += '<header class="o-section__head"><h2 class="o-section__title" id="o-t-' + sec.id + '">' + esc(tr(sec.label)) + "</h2>";
       if (sec.lede) html += '<p class="o-section__lede">' + esc(tr(sec.lede)) + "</p>";
       /* «Crea tu pizza»: se puede volver a entrar desde aquí tantas veces como se quiera */
+      if (sec.id === "ensaladas") {
+        html += '<a class="o-create" href="crea-tu-ensalada.html"><span class="o-create__t">' + esc(s("create.salad_cta")) +
+          '</span><span class="o-create__h">' + esc(s("create.hint")) + "</span>" + icon("i-plus", 18) + "</a>";
+      }
       if (sec.id === "pizzas") {
         html += '<a class="o-create" href="crea-tu-pizza.html"><span class="o-create__t">' + esc(s("create.cta")) + "</span>" +
-          '<span class="o-create__h">' + esc(s("create.hint")) + "</span>" + icon("i-plus", 18) + "</a>";
+          '<span class="o-create__h">' + esc(s("create.hint")) + "</span>" + icon("i-plus", 18) + "</a>" +
+          '<p class="o-create-warn">' + esc(s("create.cold")) + "</p>";
       }
       html += "</header>";
       var groups = [];
@@ -1336,10 +1391,12 @@
       if (p.gfOption) {
         html +=
           '<fieldset class="o-opt"><legend class="o-opt__legend">' + esc(s("dlg.base")) + "</legend>" +
-          '<label class="o-choice"><input type="radio" name="o-gf" value="0" checked><span class="o-choice__box"><span class="o-choice__t">' + esc(p.cat === "ensaladas" ? s("dlg.pan_normal") : s("dlg.base_normal")) + '</span></span></label>' +
-          '<label class="o-choice"><input type="radio" name="o-gf" value="1"><span class="o-choice__box"><span class="o-choice__t">' + esc(p.cat === "ensaladas" ? s("dlg.pan_gf") : s("dlg.base_gf")) +
-          '</span><span class="o-choice__s">+' + esc(money(gfExtraOf(p))) + "</span></span></label></fieldset>";
+          '<label class="o-choice"><input type="radio" name="o-gf" value="0" checked><span class="o-choice__box"><span class="o-choice__t">' + esc(p.cat === "ensaladas" ? s("dlg.pan_normal") : p.cat === "entrantes" ? s("dlg.plain_normal") : s("dlg.base_normal")) + '</span></span></label>' +
+          '<label class="o-choice"><input type="radio" name="o-gf" value="1"><span class="o-choice__box"><span class="o-choice__t">' + esc(p.cat === "ensaladas" ? s("dlg.pan_gf") : p.cat === "entrantes" ? s("dlg.plain_gf") : s("dlg.base_gf")) +
+          '</span>' + (gfExtraOf(p) > 0 ? '<span class="o-choice__s">+' + esc(money(gfExtraOf(p))) + '</span>' : '') + "</span></label></fieldset>";
       }
+      if (p.noTakeaway) html += '<p class="o-dlg__warn">' + esc(s(p.noTakeaway === "frio" ? "dlg.no_delivery_cold" : "dlg.no_takeaway")) + "</p>";
+      if (hasCheese(p)) html += '<p class="o-dlg__hint">' + esc(s("dlg.pasteur")) + "</p>";
       html +=
         '<div class="field o-dlg__notes"><label class="field__label" for="o-note">' + esc(s("dlg.notes")) +
         ' <span class="field__opt">(' + esc(s("dlg.optional")) + ")</span></label>" +
@@ -1546,6 +1603,7 @@
         '<select class="field__input" id="ck-cp" name="ck-cp" aria-required="true" aria-describedby="ck-cp-hint ck-cp-error"><option value="">' +
         esc(s("ck.cp_ph")) + "</option>" + zoneOptions + "</select>" +
         '<p class="field__hint" id="ck-cp-hint">' + esc(s("ck.zone_note")) + "</p>" +
+        '<p class="o-far" data-far role="status"' + (isFar() ? "" : " hidden") + ">" + esc(s("ck.far")) + "</p>" +
         '<p class="field__error" id="ck-cp-error" hidden></p></div>' +
         field("ck-rider", "ck.rider", "text", c.rider, { ph: "ck.rider_ph", cls: "o-span-2" }) +
         "</div>";
@@ -1671,6 +1729,17 @@
     var el = document.querySelector("[data-geo-msg]");
     if (el) el.textContent = geoState;
   }
+  /* ¿la dirección queda lejos? (el pedido puede llegar más frío) */
+  function isFar() {
+    var c = state.customer;
+    if (state.mode !== "delivery") return false;
+    if (c.distM !== "" && c.distM != null) return Number(c.distM) / 1000 > (CFG.lejosKm || 6);
+    return !!c.cp && (CFG.codigosLejos || []).indexOf(c.cp) !== -1;
+  }
+  function updateFar() {
+    var el = document.querySelector("[data-far]");
+    if (el) el.hidden = !isFar();
+  }
   function clearGeo() {
     var c = state.customer;
     c.lat = ""; c.lng = ""; c.distM = "";
@@ -1720,6 +1789,7 @@
         var lz = lunchZone();
         var msg = lz ? s("geo.ok_eta", { km: fmtKm(km), min: lz[0], max: lz[1] }) : s("geo.ok", { km: fmtKm(km) });
         setGeoMsg(okAddr ? msg : msg + " " + s("geo.noaddr"));
+        updateFar();
         save();
         renderCartAll();
       });
@@ -1745,6 +1815,7 @@
       clearGeo();
       setGeoMsg(s("geo.cleared"));
     }
+    updateFar();
     var w = form.querySelector('input[name="ck-when"]:checked');
     if (w) state.when.type = w.value;
     if (v("ck-day") != null) state.when.day = v("ck-day");
@@ -1944,7 +2015,7 @@
     lines.push("");
     o.cart.forEach(function (l) {
       var p = byId[l.id];
-      lines.push(l.qty + "× " + p.name + (l.gf ? (p.cat === "ensaladas" ? " (pan sin gluten)" : " (masa sin gluten)") : "") + " — " + money(unitPrice(l) * l.qty, L));
+      lines.push(l.qty + "× " + p.name + (l.gf ? (p.cat === "ensaladas" ? " (pan sin gluten)" : p.cat === "entrantes" ? " (sin gluten)" : " (masa sin gluten)") : "") + " — " + money(unitPrice(l) * l.qty, L));
       if (l.ing && l.ing.length) lines.push("   Ingredientes: " + (l.ingN || []).join(", "));
       if (l.note) lines.push("   Nota: " + l.note);
     });

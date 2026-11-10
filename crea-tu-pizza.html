@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <title>Crea tu pizza | Salicornia Pizza i Pasta</title>
-<meta name="description" content="Elige los ingredientes de tu pizza en Salicornia Pizza i Pasta: parte de una base con masa y tomate y añade lo que quieras. Ves el precio al momento.">
+<meta name="description" content="Elige los ingredientes de tu pizza en Salicornia Pizza i Pasta: parte de una base de masa y añade lo que quieras. Ves el precio al momento.">
 <meta name="theme-color" content="#0b0a09">
 <meta name="robots" content="noindex, nofollow">
 
@@ -17,7 +17,7 @@
 <link rel="preload" href="assets/fonts/karla-latin.woff2" as="font" type="font/woff2" crossorigin>
 <script>document.documentElement.className+=" js";</script>
 <link rel="stylesheet" href="assets/fonts/fonts.css">
-<link rel="stylesheet" href="assets/css/styles.css?v=20261049">
+<link rel="stylesheet" href="assets/css/styles.css?v=20261087">
 </head>
 
 <body>
@@ -90,7 +90,7 @@
     <a class="btn btn--take btn--block" href="pedido.html">Pide para llevar</a>
     <a class="btn btn--ghost btn--block" href="tel:+34864627621">Llamar · 864 62 76 21</a>
     <p class="mobile-nav-meta">
-      Marina Port Premià, Local 408/409<br>
+      Marina Port Premià, Locales 408/409 y 501/502<br>
       08330 Premià de Mar, Barcelona<br>
       <a href="mailto:salicornia.pizzeria@gmail.com">salicornia.pizzeria@gmail.com</a>
     </p>
@@ -104,13 +104,14 @@
         <a href="index.html">Inicio</a> <span aria-hidden="true">/</span> <a href="carta.html#pizzas">Carta</a> <span aria-hidden="true">/</span> <span>Crea tu pizza</span>
       </nav>
       <h1 class="h2">Crea tu pizza</h1>
-      <p class="lede mt-2">Parte de una base con masa y salsa de tomate y toca los ingredientes para añadirlos. Si pulsas varias veces el mismo, lo pones doble.</p>
+      <p class="lede mt-2">Parte de una base de masa y toca los ingredientes para añadirlos. Si pulsas varias veces el mismo, lo pones doble.</p>
 
-      <div class="cp mt-3">
+      <div class="cp mt-3" data-cp-kind="pizza">
         <div class="cp__ings">
           <section class="ing-group">
             <h2 class="h3">Bases y salsas</h2>
             <div class="ing-list">
+              <button type="button" class="ing-btn" data-ing="salsa-de-tomate" data-es="Salsa de tomate"><span>Salsa de tomate</span></button>
               <button type="button" class="ing-btn" data-ing="aceite-de-ajo-y-perejil" data-es="Aceite de ajo y perejil"><span>Aceite de ajo y perejil</span></button>
               <button type="button" class="ing-btn" data-ing="pesto-de-pistacho" data-es="Pesto de pistacho"><span>Pesto de pistacho</span></button>
               <button type="button" class="ing-btn" data-ing="crema-de-huevo-con-pecorino" data-es="Crema de huevo con pecorino"><span>Crema de huevo con pecorino</span></button>
@@ -199,12 +200,11 @@
               <button type="button" class="ing-btn" data-ing="laminas-de-trufa" data-es="Láminas de trufa"><span>Láminas de trufa</span></button>
             </div>
           </section>
-          <p class="ing-notes">Los alérgenos de cada ingrediente los puedes consultar en la carta o preguntándonos.</p>
+          <p class="ing-notes">Los alérgenos de cada ingrediente los puedes consultar en la carta o preguntándonos. La mozzarella y todos los quesos se pueden pedir pasteurizados.</p>
         </div>
 
         <div class="cp__side">
           <figure class="cp__preview">
-            <div class="cp__pizza" data-cp-pizza></div>
             <figcaption class="cp__cap">
               <span data-cp-cap></span>
               <a class="cp__jump" href="#cp-sum-t">Ver resumen</a>
@@ -248,7 +248,7 @@
       <div>
         <h3>Contacto</h3>
         <ul class="footer-links">
-          <li>Marina Port Premià, Local 408/409<br>08330 Premià de Mar, Barcelona</li>
+          <li>Marina Port Premià, Locales 408/409 y 501/502<br>08330 Premià de Mar, Barcelona</li>
           <li><a href="tel:+34864627621">864 62 76 21</a></li>
           <li><a href="mailto:salicornia.pizzeria@gmail.com">salicornia.pizzeria@gmail.com</a></li>
         </ul>
@@ -295,13 +295,12 @@
   </a>
 </div>
 
-<script src="assets/js/i18n-ca.js?v=20261054" defer></script>
-<script src="assets/js/i18n-en.js?v=20261054" defer></script>
+<script src="assets/js/i18n-ca.js?v=20261093" defer></script>
+<script src="assets/js/i18n-en.js?v=20261093" defer></script>
 <script src="assets/js/i18n.js?v=20261008" defer></script>
-<script src="assets/js/config.js?v=20261033" defer></script>
+<script src="assets/js/config.js?v=20261093" defer></script>
 <script src="assets/js/asistente.js?v=20261027" defer></script>
-<script src="assets/js/pizza-render.js?v=20261054" defer></script>
-<script src="assets/js/crea-pizza.js?v=20261055" defer></script>
+<script src="assets/js/crea-pizza.js?v=20261093" defer></script>
 <script src="assets/js/main.js?v=20261027" defer></script>
 </body>
 </html>

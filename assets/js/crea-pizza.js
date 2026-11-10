@@ -8,36 +8,56 @@
   "use strict";
 
   var STORE_KEY = "salicornia_pedido_v1"; /* el mismo borrador que pedido.js */
-  var CUSTOM_ID = "pizzas-crea-tu-pizza";
+  /* misma página para pizza y ensalada: data-cp-kind="ensalada" en el contenedor */
+  var kindEl = document.querySelector("[data-cp-kind]");
+  var SALAD = !!kindEl && kindEl.getAttribute("data-cp-kind") === "ensalada";
+  var CUSTOM_ID = SALAD ? "ensaladas-crea-tu-ensalada" : "pizzas-crea-tu-pizza";
   var MAX_EACH = 4;
   var MAX_TOTAL = 30;
 
   var cfg = (window.SAL_CONFIG && window.SAL_CONFIG.pedidos) || {};
-  var BASE = typeof cfg.pizzaBase === "number" ? cfg.pizzaBase : 10;
+  var BASE = SALAD ? (typeof cfg.ensaladaBase === "number" ? cfg.ensaladaBase : 10)
+    : (typeof cfg.pizzaBase === "number" ? cfg.pizzaBase : 10);
   var PER_ING = typeof cfg.pizzaIng === "number" ? cfg.pizzaIng : 0.8;
-  var GF = typeof cfg.sinGluten === "number" ? cfg.sinGluten : 2.5;
+  var GF = SALAD ? (typeof cfg.sinGlutenPan === "number" ? cfg.sinGlutenPan : 1)
+    : (typeof cfg.sinGluten === "number" ? cfg.sinGluten : 2.5);
+  var PRECIOS = (SALAD ? cfg.ensaladaIngPrecios : cfg.pizzaIngPrecios) || {};
+  function ingPrice(id) { return typeof PRECIOS[id] === "number" ? PRECIOS[id] : PER_ING; }
+  function cents(x) { return Math.round(x * 100) / 100; }
 
   var L = {
     es: {
-      base: "Masa y tomate (base)", empty: "Toca un ingrediente para añadirlo.", total: "Total",
+      base_s: "Base (mezclum y pan)",
+      gf_s: "Pan sin gluten (+{x})",
+      saved_s: "Ensalada guardada en tu pedido. Te llevamos al menú para seguir pidiendo…",
+      noIng_s: "Solo base",
+      base: "Masa (base)", empty: "Toca un ingrediente para añadirlo.", total: "Total",
       gf: "Pizza sin gluten (+{x})", save: "Guardar pedido", more: "Añadir uno más", less: "Quitar uno",
       remove: "Quitar", min: "Añade al menos un ingrediente.", max: "Has llegado al máximo de ingredientes.",
       maxEach: "Ese ingrediente ya está al máximo.", saved: "Pizza guardada en tu pedido. Te llevamos al menú para seguir pidiendo…", order: "Ver mi pedido ({n})", err: "No se ha podido guardar el pedido en este navegador.",
-      noIng: "Solo masa y tomate", oneIng: "1 ingrediente", nIng: "{n} ingredientes"
+      noIng: "Solo masa", oneIng: "1 ingrediente", nIng: "{n} ingredientes"
     },
     ca: {
-      base: "Massa i tomàquet (base)", empty: "Toca un ingredient per afegir-lo.", total: "Total",
+      base_s: "Base (mesclum i pa)",
+      gf_s: "Pa sense gluten (+{x})",
+      saved_s: "Amanida desada a la comanda. Et portem al menú per seguir demanant…",
+      noIng_s: "Només base",
+      base: "Massa (base)", empty: "Toca un ingredient per afegir-lo.", total: "Total",
       gf: "Pizza sense gluten (+{x})", save: "Desar comanda", more: "Afegir-ne un més", less: "Treure'n un",
       remove: "Treure", min: "Afegeix com a mínim un ingredient.", max: "Has arribat al màxim d'ingredients.",
       maxEach: "Aquest ingredient ja és al màxim.", saved: "Pizza desada a la comanda. Et portem al menú per seguir demanant…", order: "Veure la comanda ({n})", err: "No s'ha pogut desar la comanda en aquest navegador.",
-      noIng: "Només massa i tomàquet", oneIng: "1 ingredient", nIng: "{n} ingredients"
+      noIng: "Només massa", oneIng: "1 ingredient", nIng: "{n} ingredients"
     },
     en: {
-      base: "Dough and tomato (base)", empty: "Tap an ingredient to add it.", total: "Total",
+      base_s: "Base (mesclun and bread)",
+      gf_s: "Gluten-free bread (+{x})",
+      saved_s: "Salad saved to your order. Taking you to the menu so you can keep ordering…",
+      noIng_s: "Just the base",
+      base: "Dough (base)", empty: "Tap an ingredient to add it.", total: "Total",
       gf: "Gluten-free pizza (+{x})", save: "Save order", more: "Add one more", less: "Remove one",
       remove: "Remove", min: "Add at least one ingredient.", max: "You have reached the maximum number of ingredients.",
       maxEach: "That ingredient is already at the maximum.", saved: "Pizza saved to your order. Taking you to the menu so you can keep ordering…", order: "See my order ({n})", err: "The order could not be saved in this browser.",
-      noIng: "Just dough and tomato", oneIng: "1 ingredient", nIng: "{n} ingredients"
+      noIng: "Just dough", oneIng: "1 ingredient", nIng: "{n} ingredients"
     }
   };
 
@@ -62,6 +82,13 @@
   buttons.forEach(function (b) { meta[b.getAttribute("data-ing")] = b.getAttribute("data-es"); });
   var order = buttons.map(function (b) { return b.getAttribute("data-ing"); });
   var counts = {};
+  /* precio de cada ingrediente, visible en su botón */
+  buttons.forEach(function (b) {
+    var sm = document.createElement("small");
+    sm.className = "ing-price";
+    sm.textContent = "+" + money(ingPrice(b.getAttribute("data-ing")));
+    b.appendChild(sm);
+  });
 
   function lang() {
     try {
@@ -72,7 +99,8 @@
     return L[h] ? h : "es";
   }
   function s(k, vars) {
-    var t = (L[lang()] || L.es)[k] || L.es[k] || k;
+    var sk = SALAD && L[lang()] && L[lang()][k + "_s"] ? k + "_s" : k;
+    var t = (L[lang()] || L.es)[sk] || L.es[sk] || k;
     if (vars) Object.keys(vars).forEach(function (v) { t = t.replace("{" + v + "}", vars[v]); });
     return t;
   }
@@ -120,7 +148,9 @@
   function drop(id) { delete counts[id]; say(""); render(); }
 
   function price() {
-    return BASE + totalCount() * PER_ING + (els.gf.checked ? GF : 0);
+    var extra = 0;
+    Object.keys(counts).forEach(function (id) { extra += counts[id] * ingPrice(id); });
+    return cents(BASE + extra + (els.gf.checked ? GF : 0));
   }
 
   function render() {
@@ -129,7 +159,7 @@
     if (!ids.length) h += '<li class="cp__empty">' + esc(s("empty")) + "</li>";
     ids.forEach(function (id) {
       var n = counts[id], nm = name(id);
-      h += "<li><span>" + esc(nm) + (n > 1 ? " ×" + n : "") + '</span><span class="cp__price">' + esc(money(n * PER_ING)) + "</span>" +
+      h += "<li><span>" + esc(nm) + (n > 1 ? " ×" + n : "") + '</span><span class="cp__price">' + esc(money(cents(n * ingPrice(id)))) + "</span>" +
         '<span class="cp__ctl">' +
         '<button type="button" class="cp__step" data-sub="' + id + '" aria-label="' + esc(s("less") + ": " + nm) + '">−</button>' +
         '<button type="button" class="cp__step" data-add="' + id + '" aria-label="' + esc(s("more") + ": " + nm) + '">+</button>' +
@@ -169,7 +199,7 @@
       for (var i = 0; i < (counts[id] || 0); i++) { ing.push(id); ingN.push(meta[id]); }
     });
     var gf = !!els.gf.checked;
-    var key = "custom|" + (gf ? "gf" : "") + "|" + ing.slice().sort().join(",");
+    var key = (SALAD ? "ensalada|" : "custom|") + (gf ? "gf" : "") + "|" + ing.slice().sort().join(",");
     var data = { mode: "delivery", cart: [], customer: {}, pay: {} };
     try {
       var raw = localStorage.getItem(STORE_KEY);
@@ -190,7 +220,7 @@
     paintOrder();
     /* de vuelta al menú de pedir, en la sección de pizzas: ahí puede elegir otra pizza o crear otra */
     els.save.disabled = true;
-    setTimeout(function () { location.href = "pedido.html#cat-pizzas"; }, 900);
+    setTimeout(function () { location.href = "pedido.html#cat-" + (SALAD ? "ensaladas" : "pizzas"); }, 900);
   }
 
   document.addEventListener("click", function (e) {

@@ -1,7 +1,7 @@
 {
  "meta": {
   "nombre": "Salicornia Pizza i Pasta",
-  "generado": "2026-11-09",
+  "generado": "2026-11-10",
   "aviso": "Archivo GENERADO por _private/tools/build-asistente.js a partir de la web (carta.html, assets/js/config.js y assets/data/db.json). No editar a mano: cambia la web y vuelve a generarlo.",
   "idiomas": [
    "es",
@@ -51,7 +51,7 @@
  },
  "contacto": {
   "direccion": {
-   "calle": "Marina Port Premià, Local 408/409",
+   "calle": "Marina Port Premià, Locales 408/409 y 501/502",
    "cp": "08330",
    "ciudad": "Premià de Mar",
    "provincia": "Barcelona",
@@ -167,20 +167,56 @@
   "como_pedir": "Desde la página «Pide para llevar» de la web (pedido.html). Los pedidos de la web los reparte personal del propio restaurante.",
   "modalidades": [
    "A domicilio, con repartidores propios del restaurante",
-   "Para recoger en el local (Marina Port Premià, Local 408/409)"
+   "Para recoger en el local (Marina Port Premià, Locales 408/409 y 501/502)"
   ],
   "zonas_reparto": [
    "Premià de Mar (08330)",
    "Premià de Dalt (08338)",
    "Vilassar de Mar (08340)",
-   "El Masnou (08320)"
+   "Vilassar de Dalt (08339)",
+   "Teià (08329)",
+   "El Masnou (08320)",
+   "Cabrils (08348)",
+   "Cabrera de Mar (08349)",
+   "Alella (08328)",
+   "Òrrius (08317)",
+   "Vallromanes (08188)",
+   "Montgat (08390)",
+   "Argentona (08310)",
+   "Tiana (08391)",
+   "Mataró (08301)",
+   "Mataró (08302)",
+   "Mataró (08303)",
+   "Mataró (08304)",
+   "Vilanova del Vallès (08410)",
+   "Montornès del Vallès (08170)",
+   "Sant Fost de Campsentelles (08105)",
+   "Badalona (08911)",
+   "Badalona (08912)",
+   "Badalona (08913)",
+   "Badalona (08914)",
+   "Badalona (08915)",
+   "Badalona (08916)",
+   "Badalona (08917)",
+   "Badalona (08918)",
+   "La Roca del Vallès (08430)",
+   "Dosrius (08319)",
+   "Montmeló (08160)",
+   "Martorelles (08107)",
+   "Sant Andreu de Llavaneres (08392)",
+   "Santa Coloma de Gramenet (08921)",
+   "Santa Coloma de Gramenet (08922)",
+   "Santa Coloma de Gramenet (08923)",
+   "Santa Coloma de Gramenet (08924)",
+   "Sant Adrià de Besòs (08930)"
   ],
   "gastos_envio_eur": 4,
   "pedido_minimo_domicilio_eur": 15,
   "pedido_minimo_nota": "El mínimo cuenta solo los platos, sin el envío. Para recoger no hay mínimo.",
   "envase_para_llevar_eur": 0.5,
   "envase_nota": "Se cobra por cada pizza o plato de pasta.",
-  "suplemento_sin_gluten_pizza_pasta_eur": 2.5,
+  "suplemento_sin_gluten_pizza_eur": 2.5,
+  "pasta_sin_gluten_nota": "La pasta NO se puede pedir sin gluten: todas las pastas llevan gluten y no hay opción sin gluten.",
   "suplemento_pan_sin_gluten_ensaladas_eur": 1,
   "tiempo_entrega_min": "35–50",
   "tiempo_recogida_min": "20–30",
@@ -212,13 +248,14 @@
    {
     "id": "entrantes",
     "titulo": "Entrantes",
-    "introduccion": "Para el centro de la mesa mientras se calienta el horno. Vienen acompañados de pan (pan sin gluten +1,00 €).",
+    "introduccion": "Para el centro de la mesa mientras se calienta el horno. Vienen acompañados de pan (pan sin gluten +1,00 €). La mozzarella y todos los quesos se pueden pedir pasteurizados.",
     "platos": [
      {
       "nombre": "Patatas bravas al horno",
       "precio_eur": 6,
+      "opcion_sin_gluten": "Opción sin gluten",
       "alergenos_y_etiquetas": [
-       "Sin gluten",
+       "Gluten",
        "Huevo",
        "Mostaza",
        "Picante",
@@ -230,7 +267,7 @@
       "precio_eur": 4,
       "descripcion": "Pan plano italiano con aceite y orégano.",
       "alergenos_y_etiquetas": [
-       "Sin gluten",
+       "Gluten",
        "Vegano"
       ]
      },
@@ -262,7 +299,7 @@
       "precio_eur": 15,
       "descripcion": "Redondo de ternera hecho al horno con mayonesa de atún, anchoas y alcaparras.",
       "alergenos_y_etiquetas": [
-       "Sin gluten",
+       "Gluten",
        "Ternera",
        "Pescado",
        "Huevo"
@@ -281,8 +318,9 @@
      {
       "nombre": "Tabla de paletilla ibérica",
       "precio_eur": 14.5,
+      "opcion_sin_gluten": "Opción sin gluten",
       "alergenos_y_etiquetas": [
-       "Sin gluten",
+       "Gluten",
        "Cerdo"
       ]
      },
@@ -490,6 +528,7 @@
         "nombre": "Crudaiola (blanca)",
         "precio_eur": 14.5,
         "descripcion": "Mozzarella Fior di Latte, tomate cherry, perlas de mozzarella de bufala, rúcula y escamas de parmesano.",
+        "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -517,6 +556,7 @@
         "nombre": "Vegetariana",
         "precio_eur": 15.5,
         "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, berenjena, calabacín, champiñones, rúcula, parmesano y tomate cherry.",
+        "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -539,6 +579,7 @@
         "nombre": "Burrata y Parma",
         "precio_eur": 16,
         "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, jamón de Parma, burrata, rúcula y paté de aceitunas.",
+        "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -598,15 +639,16 @@
    {
     "id": "especiales",
     "titulo": "Pizzas especiales",
-    "introduccion": "Combinaciones propias de la casa, con burrata, pesto de pistacho, provola ahumada, bresaola o trufa.",
+    "introduccion": "Combinaciones propias de la casa, con burrata, pesto de pistacho, provola ahumada, bresaola o trufa. La mozzarella y todos los quesos se pueden pedir pasteurizados.",
     "grupos": [
      {
       "titulo": "Pizze bianche",
       "platos": [
        {
-        "nombre": "Port Premià",
+        "nombre": "Port Premià (blanca)",
         "precio_eur": 17,
         "descripcion": "Mozzarella Fior di Latte, burrata, anchoas del Cantábrico, tomate semiseco, tomate cherry amarillo confitado, almendra tostada y albahaca.",
+        "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -616,7 +658,7 @@
         ]
        },
        {
-        "nombre": "Moro di Venezia",
+        "nombre": "Moro di Venezia (blanca)",
         "precio_eur": 15.5,
         "descripcion": "Mozzarella Fior di Latte, gorgonzola, calabacín, pesto de pistacho, granel de pistacho y tomate cherry amarillo confitado.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
@@ -628,9 +670,10 @@
         ]
        },
        {
-        "nombre": "Luna Rossa",
+        "nombre": "Luna Rossa (blanca)",
         "precio_eur": 17,
         "descripcion": "Mozzarella Fior di Latte, mix de setas, champiñones, aceite de ajo y perejil, tomate semiseco, burrata y capocollo.",
+        "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -639,7 +682,7 @@
         ]
        },
        {
-        "nombre": "Mascalzone Latino",
+        "nombre": "Mascalzone Latino (blanca)",
         "precio_eur": 16,
         "descripcion": "Mozzarella Fior di Latte, salsiccia, friarelli (grelos), provola ahumada y 'nduja.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
@@ -651,7 +694,7 @@
         ]
        },
        {
-        "nombre": "Barbara",
+        "nombre": "Barbara (blanca)",
         "precio_eur": 16,
         "descripcion": "Mozzarella Fior di Latte, pancetta italiana curada, crema de huevo con pecorino y pimienta negra.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
@@ -663,9 +706,10 @@
         ]
        },
        {
-        "nombre": "Tirrenia",
+        "nombre": "Tirrenia (blanca)",
         "precio_eur": 16.5,
         "descripcion": "Mozzarella Fior di Latte, mortadela, burrata, pesto de pistacho y granel de pistachos.",
+        "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -675,9 +719,10 @@
         ]
        },
        {
-        "nombre": "Dragone",
+        "nombre": "Dragone (blanca)",
         "precio_eur": 17,
         "descripcion": "Mozzarella Fior di Latte, alcachofa a la brasa, cebolla roja asada, porchetta italiana, rúcula y burrata ahumada.",
+        "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -686,9 +731,10 @@
         ]
        },
        {
-        "nombre": "Tartufata",
+        "nombre": "Tartufata (blanca)",
         "precio_eur": 17,
         "descripcion": "Mozzarella Fior di Latte, bresaola, rúcula, burrata trufada y láminas de trufa.",
+        "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -716,6 +762,7 @@
         "nombre": "Siciliana",
         "precio_eur": 16.5,
         "descripcion": "Salsa de tomate San Marzano, tomates cherry, pimientos rojos y amarillos asados, anchoas del Cantábrico, orégano, cebolla roja cruda laminada, pimiento verde crudo laminado y albahaca.",
+        "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -726,6 +773,7 @@
         "nombre": "Mediterránea",
         "precio_eur": 16.5,
         "descripcion": "Salsa de tomate San Marzano, bacalao marinado ahumado, pimientos rojo y amarillo asados, aceite de ajo y perejil, pimiento verde crudo laminado, rúcula, tomate cherry y albahaca.",
+        "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -736,6 +784,7 @@
         "nombre": "+39",
         "precio_eur": 17,
         "descripcion": "Salsa de tomate San Marzano, mozzarella di bufala, rúcula, tomate cherry, jamón de Parma y escamas de parmesano.",
+        "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -756,7 +805,7 @@
    {
     "id": "pasta",
     "titulo": "Pasta",
-    "introduccion": "Pastas frescas artesanales, con sémola de trigo duro y yema de huevo, y salsas caseras. Todas las pastas llevan gluten.",
+    "introduccion": "Pastas frescas artesanales, con sémola de trigo duro y yema de huevo, y salsas caseras. Todas las pastas llevan gluten. La mozzarella y todos los quesos se pueden pedir pasteurizados.",
     "platos": [
      {
       "nombre": "Lasaña de carne",
@@ -806,9 +855,10 @@
       ]
      },
      {
-      "nombre": "Picio alla Carbonara",
+      "nombre": "Spaghetti alla Carbonara",
       "precio_eur": 18,
-      "descripcion": "Espaguetis (pasta seca), guanciale croccante, crema di uovo, pecorino y pimienta negra. Se puede cambiar el tipo de pasta por tagliatelle o penne. El espagueti puede contener trazas de soja y mostaza.",
+      "descripcion": "Espaguetis (pasta seca), guanciale croccante, crema di uovo, pecorino y pimienta negra. Se puede cambiar el tipo de pasta por tagliatelle o penne. El espagueti puede contener trazas de soja y mostaza. No es aconsejable para llevar.",
+      "aviso": "No es aconsejable para llevar.",
       "alergenos_y_etiquetas": [
        "Gluten",
        "Huevo",
@@ -1401,6 +1451,10 @@
    {
     "termino": "Pecorino",
     "significado": "Queso italiano curado elaborado con leche de oveja, de sabor salado y ligeramente picante, ideal para pastas y gratinados."
+   },
+   {
+    "termino": "Pizza blanca",
+    "significado": "Pizza sin salsa de tomate: la base es mozzarella y el resto de ingredientes."
    },
    {
     "termino": "Porchetta",

@@ -502,6 +502,7 @@
 .o-dlg__desc { margin: 0.85rem 0 0; color: color-mix(in srgb, var(--black) 75%, transparent); }
 .o-dlg__tags { margin-top: 1rem; }
 .o-dlg__ask { margin: 1.1rem 0 0; color: var(--grey); }
+.o-dlg__hint { margin-top: 1rem; font-size: 0.92rem; color: var(--grey); }
 .o-dlg__notes { margin-top: 1.4rem; }
 .o-dlg__notes textarea { min-height: 4.6rem; }
 .o-dlg__envase { margin: 0.9rem 0 0; font-size: 0.82rem; color: var(--grey); }
@@ -1112,3 +1113,11 @@ body[data-order-step]:not(.has-order-bar) .sal-fab { bottom: 1.1rem; }
   font-weight: 600;
   text-align: center;
 }
+.o-far { margin: 0.2rem 0 0; padding: 0.55rem 0.75rem; font-size: 0.9rem; line-height: 1.45; border: 1px solid color-mix(in srgb, var(--terracotta, #b5532f) 35%, transparent); background: color-mix(in srgb, var(--terracotta, #b5532f) 8%, transparent); }
+.o-far[hidden] { display: none; }
+.o-card__warn { display: inline-block; margin-top: 0.35rem; font-size: 0.78rem; font-weight: 600; color: var(--terracotta-2, #9a3f22); }
+.o-dlg__warn { margin-top: 1rem; padding: 0.55rem 0.75rem; font-size: 0.92rem; line-height: 1.45; border: 1px solid color-mix(in srgb, var(--terracotta, #b5532f) 35%, transparent); background: color-mix(in srgb, var(--terracotta, #b5532f) 8%, transparent); }
+.o-create-warn { margin: 0.5rem 0 0; padding: 0.5rem 0.75rem; font-size: 0.88rem; line-height: 1.45; color: var(--terracotta-2, #9a3f22); border: 1px solid color-mix(in srgb, var(--terracotta, #b5532f) 35%, transparent); background: color-mix(in srgb, var(--terracotta, #b5532f) 8%, transparent); }
+
+/* precio por ingrediente en «Crea tu pizza» */
+.ing-btn .ing-price { display: block; margin-top: 0.15rem; font-size: 0.78rem; opacity: 0.75; }
