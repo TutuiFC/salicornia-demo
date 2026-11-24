@@ -23,7 +23,7 @@
     {
       whatsapp: "",
       api: "",
-      telefono: "864 62 76 21",
+      telefono: "932 47 17 02",
       envio: 4,
       minimo: 15,
       envase: 0.5,

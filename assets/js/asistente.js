@@ -308,7 +308,7 @@
       var isNetError = err && (err.name === "AbortError" || err.name === "TypeError");
       var msg = isNetError
         ? t("as.error_net", "No he podido conectar. Comprueba tu conexión e inténtalo de nuevo.")
-        : t("as.error_api", "El asistente no está disponible ahora mismo. Para cualquier consulta, llámanos al 864 62 76 21.");
+        : t("as.error_api", "El asistente no está disponible ahora mismo. Llámanos al 864 62 76 21 para reservar o al 932 47 17 02 para pedir.");
       addMsg("bot", msg);
     }).then(function () {
       busy = false;

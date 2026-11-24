@@ -1,7 +1,7 @@
 {
  "meta": {
   "nombre": "Salicornia Pizza i Pasta",
-  "generado": "2026-11-10",
+  "generado": "2026-11-24",
   "aviso": "Archivo GENERADO por _private/tools/build-asistente.js a partir de la web (carta.html, assets/js/config.js y assets/data/db.json). No editar a mano: cambia la web y vuelve a generarlo.",
   "idiomas": [
    "es",
@@ -59,6 +59,9 @@
   },
   "telefono": "+34 864 62 76 21",
   "telefono_mostro": "864 62 76 21",
+  "telefono_reservas": "864 62 76 21",
+  "telefono_pedidos": "932 47 17 02",
+  "whatsapp": "629 76 81 47 (solo mensajes)",
   "email": "salicornia.pizzeria@gmail.com",
   "email_grupos_asunto": "Reserva de grupo en Salicornia",
   "coordenadas": {
@@ -222,10 +225,11 @@
   "tiempo_recogida_min": "20–30",
   "horario_pedidos": "El mismo que el del restaurante. El último pedido se acepta 30 minutos antes del cierre. También se puede programar para otra hora o para otro día.",
   "formas_pago": "Efectivo o tarjeta al recibir el pedido (o al recogerlo). Si en la web aparece el pago online, también se puede pagar al hacer el pedido.",
-  "telefono_pedidos": "864 62 76 21"
+  "telefono_pedidos": "932 47 17 02"
  },
  "reservas": {
   "como_reservar": "En la sección «Reservar mesa» de la web (módulo de CoverManager), en CoverManager o llamando al 864 62 76 21.",
+  "telefonos": "Reservas: 864 62 76 21 (solo reservas). Pedidos y para llevar: 932 47 17 02. WhatsApp: 629 76 81 47 (solo mensajes, no para llamar).",
   "grupos": "Para grupos grandes o celebraciones, llamar al 864 62 76 21 o escribir a salicornia.pizzeria@gmail.com.",
   "lunes_cerrado": true,
   "enlace_covermanager": "https://restaurante.covermanager.com/salicornia-pizzeria/"
@@ -336,7 +340,7 @@
      {
       "nombre": "Berenjena a la parmesana",
       "precio_eur": 13,
-      "descripcion": "Berenjena, salsa de tomate San Marzano, mozzarella Fior di Latte y parmesano.",
+      "descripcion": "Berenjena, salsa de tomate San Marzano, mozzarella y parmesano.",
       "alergenos_y_etiquetas": [
        "Sin gluten",
        "Lácteo",
@@ -461,7 +465,7 @@
        {
         "nombre": "Margherita",
         "precio_eur": 11,
-        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte y albahaca.",
+        "descripcion": "Salsa de tomate San Marzano, mozzarella y albahaca.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -483,7 +487,7 @@
        {
         "nombre": "Prosciutto",
         "precio_eur": 13.5,
-        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte y jamón dulce.",
+        "descripcion": "Salsa de tomate San Marzano, mozzarella y jamón dulce.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -494,7 +498,7 @@
        {
         "nombre": "Napoli",
         "precio_eur": 14,
-        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, alcaparras, anchoas italianas y orégano.",
+        "descripcion": "Salsa de tomate San Marzano, mozzarella, alcaparras, anchoas italianas y orégano.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -505,7 +509,7 @@
        {
         "nombre": "Capricciosa",
         "precio_eur": 15.5,
-        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, alcachofas, jamón dulce, champiñones y olivas.",
+        "descripcion": "Salsa de tomate San Marzano, mozzarella, alcachofas, jamón dulce, champiñones y olivas.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -516,7 +520,7 @@
        {
         "nombre": "Parmigiana",
         "precio_eur": 15,
-        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, berenjena, jamón dulce, escamas de parmesano y albahaca.",
+        "descripcion": "Salsa de tomate San Marzano, mozzarella, berenjena, jamón dulce, escamas de parmesano y albahaca.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -527,7 +531,7 @@
        {
         "nombre": "Crudaiola (blanca)",
         "precio_eur": 14.5,
-        "descripcion": "Mozzarella Fior di Latte, tomate cherry, perlas de mozzarella de bufala, rúcula y escamas de parmesano.",
+        "descripcion": "Mozzarella, tomate cherry, perlas de mozzarella de bufala, rúcula y escamas de parmesano.",
         "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
@@ -543,7 +547,7 @@
        {
         "nombre": "Diavola",
         "precio_eur": 16,
-        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, salsiccia, salame picante y aceitunas.",
+        "descripcion": "Salsa de tomate San Marzano, mozzarella, salsiccia, salame picante y aceitunas.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -555,7 +559,7 @@
        {
         "nombre": "Vegetariana",
         "precio_eur": 15.5,
-        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, berenjena, calabacín, champiñones, rúcula, parmesano y tomate cherry.",
+        "descripcion": "Salsa de tomate San Marzano, mozzarella, berenjena, calabacín, champiñones, rúcula, parmesano y tomate cherry.",
         "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
@@ -567,7 +571,7 @@
        {
         "nombre": "Prosciutto e funghi",
         "precio_eur": 14,
-        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, jamón dulce y champiñones.",
+        "descripcion": "Salsa de tomate San Marzano, mozzarella, jamón dulce y champiñones.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -578,7 +582,7 @@
        {
         "nombre": "Burrata y Parma",
         "precio_eur": 16,
-        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, jamón de Parma, burrata, rúcula y paté de aceitunas.",
+        "descripcion": "Salsa de tomate San Marzano, mozzarella, jamón de Parma, burrata, rúcula y paté de aceitunas.",
         "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
@@ -590,7 +594,7 @@
        {
         "nombre": "Quattro formaggi (blanca)",
         "precio_eur": 14.5,
-        "descripcion": "Mozzarella Fior di Latte, gorgonzola, provola ahumada y escamas de parmesano.",
+        "descripcion": "Mozzarella, gorgonzola, provola ahumada y escamas de parmesano.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -601,7 +605,7 @@
        {
         "nombre": "Calzone (pizza cerrada)",
         "precio_eur": 14.5,
-        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, champiñones, jamón dulce y orégano.",
+        "descripcion": "Salsa de tomate San Marzano, mozzarella, champiñones, jamón dulce y orégano.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -612,7 +616,7 @@
        {
         "nombre": "Speck y gorgonzola (blanca)",
         "precio_eur": 15.5,
-        "descripcion": "Mozzarella Fior di Latte, gorgonzola, speck, nueces y miel.",
+        "descripcion": "Mozzarella, gorgonzola, speck, nueces y miel.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -624,7 +628,7 @@
        {
         "nombre": "Guancialina (blanca)",
         "precio_eur": 16,
-        "descripcion": "Mozzarella Fior di Latte, champiñones, guanciale croccante y crema tartufata.",
+        "descripcion": "Mozzarella, champiñones, guanciale croccante y crema tartufata.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -647,7 +651,7 @@
        {
         "nombre": "Port Premià (blanca)",
         "precio_eur": 17,
-        "descripcion": "Mozzarella Fior di Latte, burrata, anchoas del Cantábrico, tomate semiseco, tomate cherry amarillo confitado, almendra tostada y albahaca.",
+        "descripcion": "Mozzarella, burrata, anchoas del Cantábrico, tomate semiseco, tomate cherry amarillo confitado, almendra tostada y albahaca.",
         "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
@@ -660,7 +664,7 @@
        {
         "nombre": "Moro di Venezia (blanca)",
         "precio_eur": 15.5,
-        "descripcion": "Mozzarella Fior di Latte, gorgonzola, calabacín, pesto de pistacho, granel de pistacho y tomate cherry amarillo confitado.",
+        "descripcion": "Mozzarella, gorgonzola, calabacín, pesto de pistacho, granel de pistacho y tomate cherry amarillo confitado.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -672,7 +676,7 @@
        {
         "nombre": "Luna Rossa (blanca)",
         "precio_eur": 17,
-        "descripcion": "Mozzarella Fior di Latte, mix de setas, champiñones, aceite de ajo y perejil, tomate semiseco, burrata y capocollo.",
+        "descripcion": "Mozzarella, mix de setas, champiñones, aceite de ajo y perejil, tomate semiseco, burrata y capocollo.",
         "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
@@ -684,7 +688,7 @@
        {
         "nombre": "Mascalzone Latino (blanca)",
         "precio_eur": 16,
-        "descripcion": "Mozzarella Fior di Latte, salsiccia, friarelli (grelos), provola ahumada y 'nduja.",
+        "descripcion": "Mozzarella, salsiccia, friarelli (grelos), provola ahumada y 'nduja.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -696,7 +700,7 @@
        {
         "nombre": "Barbara (blanca)",
         "precio_eur": 16,
-        "descripcion": "Mozzarella Fior di Latte, pancetta italiana curada, crema de huevo con pecorino y pimienta negra.",
+        "descripcion": "Mozzarella, pancetta italiana curada, crema de huevo con pecorino y pimienta negra.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -708,7 +712,7 @@
        {
         "nombre": "Tirrenia (blanca)",
         "precio_eur": 16.5,
-        "descripcion": "Mozzarella Fior di Latte, mortadela, burrata, pesto de pistacho y granel de pistachos.",
+        "descripcion": "Mozzarella, mortadela, burrata, pesto de pistacho y granel de pistachos.",
         "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
@@ -721,7 +725,7 @@
        {
         "nombre": "Dragone (blanca)",
         "precio_eur": 17,
-        "descripcion": "Mozzarella Fior di Latte, alcachofa a la brasa, cebolla roja asada, porchetta italiana, rúcula y burrata ahumada.",
+        "descripcion": "Mozzarella, alcachofa a la brasa, cebolla roja asada, porchetta italiana, rúcula y burrata ahumada.",
         "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
@@ -733,7 +737,7 @@
        {
         "nombre": "Tartufata (blanca)",
         "precio_eur": 17,
-        "descripcion": "Mozzarella Fior di Latte, bresaola, rúcula, burrata trufada y láminas de trufa.",
+        "descripcion": "Mozzarella, bresaola, rúcula, burrata trufada y láminas de trufa.",
         "aviso": "Lleva ingredientes fríos: no es aconsejable pedirla a domicilio (mejor recogerla o comerla en el local).",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
@@ -750,7 +754,7 @@
        {
         "nombre": "Azzurra",
         "precio_eur": 16,
-        "descripcion": "Salsa de tomate San Marzano, mozzarella Fior di Latte, ventresca de atún, cebolla roja asada, tomates cherry amarillos confitados y aceitunas.",
+        "descripcion": "Salsa de tomate San Marzano, mozzarella, ventresca de atún, cebolla roja asada, tomates cherry amarillos confitados y aceitunas.",
         "opcion_sin_gluten": "Opción sin gluten +2,50 €",
         "alergenos_y_etiquetas": [
          "Gluten",
@@ -805,12 +809,12 @@
    {
     "id": "pasta",
     "titulo": "Pasta",
-    "introduccion": "Pastas frescas artesanales, con sémola de trigo duro y yema de huevo, y salsas caseras. Todas las pastas llevan gluten. La mozzarella y todos los quesos se pueden pedir pasteurizados.",
+    "introduccion": "Pastas frescas artesanales, con sémola de trigo duro y yema de huevo, y salsas. Todas las pastas llevan gluten. La mozzarella y todos los quesos se pueden pedir pasteurizados.",
     "platos": [
      {
       "nombre": "Lasaña de carne",
       "precio_eur": 15,
-      "descripcion": "Salsa de tomate San Marzano, carne picada mixta, bechamel, mozzarella Fior di Latte, láminas de pasta y queso parmesano.",
+      "descripcion": "Salsa de tomate San Marzano, carne picada mixta, bechamel, mozzarella, láminas de pasta y queso parmesano.",
       "alergenos_y_etiquetas": [
        "Gluten",
        "Huevo",
@@ -1148,6 +1152,7 @@
        {
         "nombre": "Mahou 5 Estrellas",
         "precio_eur": 3,
+        "descripcion": "Lager clásica madrileña: dorada, con cuerpo y de trago fácil.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1155,6 +1160,7 @@
        {
         "nombre": "Mahou sin gluten",
         "precio_eur": 3.5,
+        "descripcion": "La lager de Mahou en versión apta para celíacos.",
         "alergenos_y_etiquetas": [
          "Sin gluten"
         ]
@@ -1162,7 +1168,7 @@
        {
         "nombre": "Mahou sin gluten tostada 0,0",
         "precio_eur": 3.5,
-        "descripcion": "Sin alcohol.",
+        "descripcion": "Sin alcohol y sin gluten, con el sabor a malta tostada de siempre.",
         "alergenos_y_etiquetas": [
          "Sin gluten"
         ]
@@ -1170,6 +1176,7 @@
        {
         "nombre": "Alhambra Reserva",
         "precio_eur": 3.2,
+        "descripcion": "Lager extra de Granada, intensa y aromática, en su botella verde con relieve.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1177,6 +1184,7 @@
        {
         "nombre": "Alhambra Roja Reserva",
         "precio_eur": 3.4,
+        "descripcion": "La más intensa de Alhambra: color rojizo, malta tostada y final largo.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1184,6 +1192,7 @@
        {
         "nombre": "Voll-Damm",
         "precio_eur": 3.2,
+        "descripcion": "Doble malta de estilo märzen: ámbar, con mucho cuerpo y sabor a malta.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1191,7 +1200,7 @@
        {
         "nombre": "San Miguel Radler 0,0",
         "precio_eur": 3,
-        "descripcion": "Sin alcohol.",
+        "descripcion": "Sin alcohol, con zumo de limón. Muy refrescante.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1199,7 +1208,7 @@
        {
         "nombre": "San Miguel 0,0",
         "precio_eur": 3,
-        "descripcion": "Sin alcohol.",
+        "descripcion": "Sin alcohol. Lager ligera y refrescante.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1207,7 +1216,7 @@
        {
         "nombre": "San Miguel 0,0 Tostada",
         "precio_eur": 3,
-        "descripcion": "Sin alcohol.",
+        "descripcion": "Sin alcohol, con malta tostada: más sabor y más color.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1215,6 +1224,7 @@
        {
         "nombre": "Coronita",
         "precio_eur": 3.2,
+        "descripcion": "Cerveza mexicana en botellín pequeño. Ligera y refrescante, se suele servir con lima.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1222,6 +1232,7 @@
        {
         "nombre": "Peroni",
         "precio_eur": 3.2,
+        "descripcion": "Lager italiana, clara, seca y refrescante.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1229,6 +1240,7 @@
        {
         "nombre": "Incusa no filtrada",
         "precio_eur": 3.2,
+        "descripcion": "Cerveza sin filtrar: algo turbia, con más cuerpo y aroma.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1241,7 +1253,7 @@
        {
         "nombre": "Flea Costanza",
         "precio_eur": 4.9,
-        "descripcion": "Blonde Ale.",
+        "descripcion": "Blonde ale de 5,2 %: rubia, suave y equilibrada.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1249,7 +1261,7 @@
        {
         "nombre": "Flea Isabella",
         "precio_eur": 4.9,
-        "descripcion": "Sin gluten.",
+        "descripcion": "Rubia sin gluten de 4,9 %, apta para celíacos.",
         "alergenos_y_etiquetas": [
          "Sin gluten"
         ]
@@ -1257,7 +1269,7 @@
        {
         "nombre": "Flea Anais",
         "precio_eur": 4.9,
-        "descripcion": "Smoked.",
+        "descripcion": "Cerveza ahumada de 6,4 %, con notas de malta ahumada.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1265,7 +1277,7 @@
        {
         "nombre": "Flea Bianca",
         "precio_eur": 4.9,
-        "descripcion": "Blanche.",
+        "descripcion": "Blanche (trigo al estilo belga) de 5,0 %: ligera, cítrica y especiada.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1273,7 +1285,7 @@
        {
         "nombre": "Flea Federica extra",
         "precio_eur": 4.9,
-        "descripcion": "IPA.",
+        "descripcion": "IPA de 6,6 %, sin filtrar y refermentada en botella: amarga, herbácea y lupulada.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1281,7 +1293,7 @@
        {
         "nombre": "Flea Bastola",
         "precio_eur": 4.9,
-        "descripcion": "Imperial Red Ale.",
+        "descripcion": "Imperial red ale de 6,9 %: ámbar oscuro tirando a rojo, intensa.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1289,23 +1301,7 @@
        {
         "nombre": "Flea Violante",
         "precio_eur": 4.9,
-        "descripcion": "Belgian Strong Ale.",
-        "alergenos_y_etiquetas": [
-         "Gluten"
-        ]
-       },
-       {
-        "nombre": "Cierzo Citra",
-        "precio_eur": 6,
-        "descripcion": "IPA.",
-        "alergenos_y_etiquetas": [
-         "Gluten"
-        ]
-       },
-       {
-        "nombre": "Cierzo Just in time",
-        "precio_eur": 5,
-        "descripcion": "Pale Ale.",
+        "descripcion": "Belgian strong ale de 8,0 %: intensa, cálida y con mucho cuerpo.",
         "alergenos_y_etiquetas": [
          "Gluten"
         ]
@@ -1441,7 +1437,7 @@
     "significado": "Embutido curado italiano elaborado con papada de cerdo, de sabor intenso y textura melosa tras cocinarse."
    },
    {
-    "termino": "Mozzarella Fior di Latte",
+    "termino": "Mozzarella",
     "significado": "Queso mozzarella hecho con leche de vaca, de alta calidad. Ideal para la pizza."
    },
    {

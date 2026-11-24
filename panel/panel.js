@@ -73,7 +73,7 @@
     function (n) {
       return mk({ ref: "SAL-" + n, mode: "delivery", asap: true, name: "Joan T.", phone: "654 111 222", addr: "Carrer de Sant Miquel 21, 08330 Premià de Mar", km: 1.4,
         rider: "", pay: "cash", cashWith: "50", paid: false, allergies: "Celíaco: todo sin gluten",
-        items: [item(1, "Crea tu pizza", 15.7, { note: "Ingredientes: Mozzarella fior di latte ×2, Albahaca, Rúcula", gf: true }), item(1, "Coca-Cola Zero", 2.9, { pack: false })] });
+        items: [item(1, "Crea tu pizza", 15.7, { note: "Ingredientes: Mozzarella ×2, Albahaca, Rúcula", gf: true }), item(1, "Coca-Cola Zero", 2.9, { pack: false })] });
     },
     function (n) {
       return mk({ ref: "SAL-" + n, mode: "pickup", asap: true, name: "Nuria G.", phone: "600 987 654", addr: "", km: null, rider: "", pay: "cash", paid: false, allergies: "",

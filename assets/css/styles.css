@@ -2833,3 +2833,87 @@ a.btn[href$="#reservar"]:hover { color: var(--ink); border-color: var(--gold); }
 @media (min-width: 760px) { .grp-cta { grid-template-columns: 1fr auto; } }
 .grp__cm { margin: 1rem 0 0.6rem; padding: 0; border: 1px solid color-mix(in srgb, var(--black) 14%, transparent); border-radius: var(--radius); overflow: hidden; background: #fff; }
 .dish-warn { margin: 0.35rem 0 0; font-size: 0.82rem; font-weight: 600; color: var(--terracotta-2, #9a3f22); }
+
+/* Portada: etiquetas y datos que llevan a su sección */
+.tag--link { display: inline-block; text-decoration: none; transition: color 0.25s var(--ease), border-color 0.25s var(--ease), background-color 0.25s var(--ease); }
+.tag--link:hover, .tag--link:focus-visible { color: var(--wine); border-color: var(--wine); background: color-mix(in srgb, var(--wine) 6%, transparent); }
+.tag--link:focus-visible { outline: 2px solid var(--wine); outline-offset: 2px; }
+.fact__link { display: block; color: inherit; text-decoration: none; }
+.fact__link:hover, .fact__link:focus-visible { color: var(--wine); }
+.fact__link:hover small, .fact__link:focus-visible small { color: var(--grey); }
+.fact__link:focus-visible { outline: 2px solid var(--wine); outline-offset: 4px; }
+
+
+/* Portada: foto única con su descripción */
+.foto-desc {
+  display: flex;
+  align-items: baseline;
+  gap: 0.85rem;
+  max-width: 34rem;
+  margin: 1.75rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: color-mix(in srgb, var(--black) 72%, transparent);
+  text-wrap: pretty;
+}
+.foto-desc::before {
+  content: "";
+  flex: none;
+  width: 1.75rem;
+  height: 1px;
+  background: var(--wine);
+  transform: translateY(-0.3em);
+}
+.section-dark .foto-desc { color: color-mix(in srgb, var(--cream) 75%, transparent); }
+.section-dark .foto-desc::before { background: var(--gold); }
+/* la etiqueta «Pasta italiana» monta sobre el borde de la foto y el texto va debajo */
+.pasta-figure .pasta-stamp { position: relative; display: inline-block; bottom: auto; margin-top: -1.55rem; z-index: 1; }
+.pasta-figure .foto-desc { margin-top: 1.35rem; }
+/* el pie antiguo del carrusel iba en mayúsculas; la descripción va en texto normal */
+.intro-figure .foto-desc { margin-top: 1.9rem; font-size: 0.95rem; letter-spacing: normal; text-transform: none; color: color-mix(in srgb, var(--black) 72%, transparent); }
+
+/* Portada, «Nuestras pizzas»: aviso de pizzas sin gluten */
+.gf-note {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 1.1rem 0 0;
+  padding: 0.55rem 1rem;
+  border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
+  border-radius: 999px;
+  font-size: 0.92rem;
+  line-height: 1.4;
+  color: var(--gold);
+}
+.gf-note::before {
+  content: "";
+  flex: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: currentColor;
+}
+.section-ivory .gf-note, .section-cream .gf-note { color: var(--wine); border-color: color-mix(in srgb, var(--wine) 40%, transparent); }
+
+/* Portada, «Nuestras pizzas»: la pizza de la foto y el enlace a todas */
+.pizza-pick { align-self: center; max-width: 30rem; }
+.pizza-pick__k { margin: 0 0 0.6rem; font-size: 0.6875rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); }
+.pizza-pick__t { margin: 0; font-family: var(--font-display); font-weight: 400; font-size: clamp(1.8rem, 3vw, 2.4rem); line-height: 1.15; color: var(--cream); }
+.pizza-pick__d { margin: 0.9rem 0 0; font-size: 1.02rem; line-height: 1.6; color: color-mix(in srgb, var(--cream) 78%, transparent); text-wrap: pretty; }
+
+/* la misma ficha sobre fondo claro (pasta) */
+.pizza-pick--light .pizza-pick__k { color: var(--wine); }
+.pizza-pick--light .pizza-pick__t { color: var(--black); }
+.pizza-pick--light .pizza-pick__d { color: color-mix(in srgb, var(--black) 72%, transparent); }
+.pizza-pick--light { padding-top: 1.75rem; border-top: 1px solid var(--line-light); }
+
+/* Portada, pestaña Vinos: título de cada grupo */
+.panel-group { margin: 1.6rem 0 0.2rem; font-size: 0.6875rem; letter-spacing: 0.26em; text-transform: uppercase; color: var(--wine); }
+.panel-group:first-child { margin-top: 0; }
+
+/* Portada, pestaña Vinos: botella a la izquierda de cada vino */
+.menu-list .wine-li { grid-template-columns: 72px minmax(0, 1fr) auto; column-gap: 1.1rem; align-items: center; }
+.menu-list .wine-li--none { grid-template-columns: minmax(0, 1fr) auto; }
+.wine-img { grid-row: 1 / span 2; width: 72px; height: 120px; object-fit: contain; mix-blend-mode: multiply; }
+.menu-list .wine-li p { grid-column: 2 / -1; }
+.menu-list .wine-li--none p { grid-column: 1 / -1; }

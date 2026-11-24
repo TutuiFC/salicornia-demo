@@ -22,7 +22,7 @@ window.SAL_CONFIG = {
     /* Servidor de pedidos (guarda el pedido, avisa al restaurante y cobra online).
        Vacío = sin servidor: se usa WhatsApp o el modo demo de arriba. */
     api: "api/pedido.php",
-    telefono: "864 62 76 21",
+    telefono: "932 47 17 02",       // pedidos y para llevar (reservas: 864 62 76 21)
     envio: 4,              // gastos de envío (€)
     minimo: 15,            // pedido mínimo a domicilio (€), sin envío
     envase: 0.5,           // envase para llevar, por pizza o pasta (€)
