@@ -2872,28 +2872,20 @@ a.btn[href$="#reservar"]:hover { color: var(--ink); border-color: var(--gold); }
 /* el pie antiguo del carrusel iba en mayúsculas; la descripción va en texto normal */
 .intro-figure .foto-desc { margin-top: 1.9rem; font-size: 0.95rem; letter-spacing: normal; text-transform: none; color: color-mix(in srgb, var(--black) 72%, transparent); }
 
-/* Portada, «Nuestras pizzas»: aviso de pizzas sin gluten */
+/* Portada, «Nuestras pizzas»: aviso de pizzas sin gluten (rectángulo liso) */
 .gf-note {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  margin: 1.1rem 0 0;
-  padding: 0.55rem 1rem;
-  border: 1px solid color-mix(in srgb, var(--gold) 55%, transparent);
-  border-radius: 999px;
-  font-size: 0.92rem;
-  line-height: 1.4;
-  color: var(--gold);
+  display: block;
+  max-width: 34rem;
+  margin: 1.25rem 0 0;
+  padding: 0.85rem 1.1rem;
+  border: 1px solid color-mix(in srgb, var(--gold) 60%, transparent);
+  border-radius: 0;
+  background: color-mix(in srgb, var(--gold) 8%, transparent);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--cream);
 }
-.gf-note::before {
-  content: "";
-  flex: none;
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background: currentColor;
-}
-.section-ivory .gf-note, .section-cream .gf-note { color: var(--wine); border-color: color-mix(in srgb, var(--wine) 40%, transparent); }
+.section-ivory .gf-note, .section-cream .gf-note { color: var(--black); border-color: color-mix(in srgb, var(--black) 35%, transparent); background: transparent; }
 
 /* Portada, «Nuestras pizzas»: la pizza de la foto y el enlace a todas */
 .pizza-pick { align-self: center; max-width: 30rem; }
